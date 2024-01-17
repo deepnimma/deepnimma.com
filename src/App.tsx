@@ -1,4 +1,4 @@
-import './App.css';
+import './css/App.css';
 
 const Header: React.FC = () => {
   return <div className="header">
@@ -7,8 +7,8 @@ const Header: React.FC = () => {
 };
 
 const Body: React.FC = () => {
-  return <div className="Body">
-    <span className="bodyText">Place Holder Body Text</span>
+  return <div className="body">
+    <span className="bodyText">Deepesh Nimma</span>
   </div>
 }
 

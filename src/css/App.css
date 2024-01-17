@@ -1,4 +1,12 @@
-.website {
+.header {
+  background-color: darkcyan;
+}
+
+.headerText {
+  opacity: 0;
+}
+
+.body {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -8,9 +16,12 @@
   font-family: 'Bahnschrift';
 }
 
-.placeholder {
+.bodyText {
   text-transform: capitalize;
-  font-family: 'Bahnschrift';
   font-size: 40px;
-  text-align: center;
+  color: lightgray;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
