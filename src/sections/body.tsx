@@ -1,5 +1,9 @@
-import './css/Body.css'
+import '../css/Body.css'
 
+const Body: React.FC = () => {
+    return <div className="body">
+        <span className="bodyText">Deepesh Nimma</span>
+    </div>
+};
 
-
-export{}
+export { Body };
