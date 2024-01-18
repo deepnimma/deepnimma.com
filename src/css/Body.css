@@ -1,4 +1,4 @@
-.body {
+.bodycon {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -10,7 +10,7 @@
   
 .nameText {
     text-transform: capitalize;
-    font-size: 40px;
+    font-size: 6vw;
     color: lightgray;
     position: absolute;
     left: 50%;
@@ -20,10 +20,8 @@
 
 .desc {
     text-transform: capitalize;
-    font-size: 16px;
+    font-size: 3vw;
     color: lightgray;
-    position: absolute;
-    left: 50%;
-    top: 53%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: 55%;
 }
