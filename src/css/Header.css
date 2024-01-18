@@ -1,14 +1,16 @@
 .header {
     background: darkcyan;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
 }
 
 .socials {
     opacity: 1;
     width: 120px;
     height: 120px;
-    flex-direction: column;
-    align-items: right;
-    justify-content: right;
+    position: absolute;
+    right: 0%;
 }
 
 .githubBtn {

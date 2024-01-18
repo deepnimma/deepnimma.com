@@ -8,12 +8,22 @@
     font-family: 'Bahnschrift';
 }
   
-.bodyText {
+.nameText {
     text-transform: capitalize;
     font-size: 40px;
     color: lightgray;
     position: absolute;
     left: 50%;
     top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.desc {
+    text-transform: capitalize;
+    font-size: 16px;
+    color: lightgray;
+    position: absolute;
+    left: 50%;
+    top: 53%;
     transform: translate(-50%, -50%);
 }
