@@ -2,6 +2,53 @@
     background: darkcyan;
 }
 
-.headerText {
-    opacity: 0;
+.socials {
+    opacity: 1;
+    width: 120px;
+    height: 120px;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+}
+
+.githubBtn {
+    background: transparent;
+    background-color: darkcyan;
+    border-color: darkcyan;
+    border-style: solid;
+    width: 40px;
+    height: 40px;
+}
+
+.instagramBtn {
+    background: transparent;
+    background-color: darkcyan;
+    border-color: darkcyan;
+    border-style: solid;
+    width: 40px;
+    height: 40px;
+}
+
+.linkedinBtn {
+    background: transparent;
+    background-color: darkcyan;
+    border-color: darkcyan;
+    border-style: solid;
+    width: 40px;
+    height: 40px;
+}
+
+.actualLinkedinBtn {
+    width: 30px;
+    height: 30px;
+}
+
+.actualGithubBtn {
+    width: 30px;
+    height: 30px;
+}
+
+.actualInstagramBtn {
+    width: 30px;
+    height: 30px;
 }

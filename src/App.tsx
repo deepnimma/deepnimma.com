@@ -16,7 +16,7 @@ import { Body } from "./sections/body"
 
 const App: React.FC = () => {
   return (
-    <div>
+    <div className="appContainer">
       <Header />
       <Body />
     </div>
