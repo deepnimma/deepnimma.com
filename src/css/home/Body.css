@@ -7,10 +7,20 @@
     background-color: darkcyan;
     font-family: 'Bahnschrift';
 }
+
+/* @media all and (max-width: 1200px) and (min-width: 800px) {
+    .desc {
+        font-size: 1rem;
+    }
+
+    .nameText {
+        font-size: 3vh;
+    }
+} */
   
 .nameText {
     text-transform: capitalize;
-    font-size: 6vw;
+    font-size: 3.14vh;
     color: lightgray;
     position: absolute;
     left: 50%;
@@ -20,8 +30,11 @@
 
 .desc {
     text-transform: capitalize;
-    font-size: 3vw;
     color: lightgray;
     position: relative;
-    top: 55%;
+    top: 52%
+}
+
+.desc {
+    font-size: 1.5vh;
 }

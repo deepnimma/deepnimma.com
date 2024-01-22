@@ -1,6 +1,6 @@
-import './css/App.css';
-import { Header } from "./sections/header"
-import { Body } from "./sections/body"
+import './css/home/App.css';
+import { Header } from "./sections/home/header"
+import { Body } from "./sections/home/body"
 
 // const Header: React.FC = () => {
 //   return <div className="header">

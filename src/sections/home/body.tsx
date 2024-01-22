@@ -1,4 +1,4 @@
-import '../css/Body.css'
+import '../../css/home/Body.css'
 
 const Body: React.FC = () => {
     return <div className="bodycon">

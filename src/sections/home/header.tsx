@@ -1,5 +1,5 @@
-import '../css/Header.css'
-import { githubBtn, linkedInBtn, instaBtn } from '../objects/socialsbuttons';
+import '../../css/home/Header.css'
+import { githubBtn, linkedInBtn, instaBtn } from '../../objects/socialsbuttons';
 
 const SocialButtons: React.FC = () => {
     return <div className="socials">
