@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: darkcyan;
+    background-color: black;
     font-family: 'Bahnschrift';
 }
 
@@ -21,7 +21,7 @@
 .nameText {
     text-transform: capitalize;
     font-size: 3.14vh;
-    color: lightgray;
+    color: red;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -30,7 +30,7 @@
 
 .desc {
     text-transform: capitalize;
-    color: lightgray;
+    color: red;
     position: relative;
     top: 52%
 }

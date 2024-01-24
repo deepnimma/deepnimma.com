@@ -12,6 +12,6 @@ Will contains multiple features that are still under heavy consideration and pla
 
 
 ### Attributions
-* <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github Icon by Pixel Perfect - Flaticon</a>
-* <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin Icon by riajulislam - Flaticon</a> 
+* <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github Icon by Freepik - Flaticon</a>
+* <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin Icon by riajulislam - Flaticon</a>
 * <a href="https://www.flaticon.com/free-icons/instagram-logo" title="instagram logo icons">Instagram Icon by Hight Quality Icons - Flaticon</a>
