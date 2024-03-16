@@ -2,7 +2,6 @@
     background: black;
     display: flex;
     flex-direction: column;
-    align-items: right;
 }
 
 .socials {
@@ -15,7 +14,6 @@
 
 .githubBtn {
     background: transparent;
-    background-color: black;
     border-color: black;
     border-style: solid;
     width: 40px;
@@ -25,7 +23,6 @@
 
 .instagramBtn {
     background: transparent;
-    background-color: black;
     border-color: black;
     border-style: solid;
     width: 40px;
@@ -35,7 +32,6 @@
 
 .linkedinBtn {
     background: transparent;
-    background-color: black;
     border-color: black;
     border-style: solid;
     width: 40px;
@@ -60,8 +56,7 @@
 
 .navBar {
     background: transparent;
-    background-color: black;
-    font-family: 'Bahnschrift';
+    font-family: 'Bahnschrift', ui-monospace;
     font-size: 16px;
 }
 
@@ -76,8 +71,8 @@
     text-transform: capitalize;
     transition: ease white 250ms;
     border-radius: 5px;
-    font-family: Bahnschrift;
-    font-size: 16px;
+    font-family: Bahnschrift, ui-monospace;
+    font-size: 2vh;
 }
 
 .Investigates {
@@ -91,38 +86,8 @@
     text-transform: capitalize;
     transition: ease white 250ms;
     border-radius: 5px;
-    font-family: Bahnschrift;
-    font-size: 16px;
-}
-
-.Placeholder {
-    background: black;
-    border-style: hidden;
-    border-color: white;
-    text-align: left;
-    color: white;
-    margin: 10px 10px;
-    cursor: pointer;
-    text-transform: capitalize;
-    transition: ease white 250ms;
-    border-radius: 5px;
-    font-family: Bahnschrift;
-    font-size: 16px;
-}
-
-.SecondPlaceholder {
-    background: black;
-    border-style: hidden;
-    border-color: white;
-    text-align: left;
-    color: white;
-    margin: 10px 10px;
-    cursor: pointer;
-    text-transform: capitalize;
-    transition: ease white 250ms;
-    border-radius: 5px;
-    font-family: Bahnschrift;
-    font-size: 16px;
+    font-family: Bahnschrift, ui-monospace;
+    font-size: 2vh;
 }
 
 .Portfolio:hover {

@@ -10,12 +10,6 @@ const NavBar: React.FC = () => {
         <a href={tabs[1].actualLink} target={"_blank"} rel={"noreferrer"}>
             <button className={tabs[1].name}>{tabs[1].name}</button>
         </a>
-        <a href={"deepnimma.com/placeholder"} target={"_blank"} rel={"noreferrer"}>
-            <button className={"Placeholder"}>Placeholder</button>
-        </a>
-        <a href={"deepnimma.com/SecondPlaceholder"} target={"_blank"} rel={"noreferrer"}>
-            <button className={"SecondPlaceholder"}>SecondPlaceholder</button>
-        </a>
     </div>
 }; // NavBar
 
