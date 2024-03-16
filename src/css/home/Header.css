@@ -95,6 +95,36 @@
     font-size: 16px;
 }
 
+.Placeholder {
+    background: black;
+    border-style: hidden;
+    border-color: white;
+    text-align: left;
+    color: white;
+    margin: 10px 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: ease white 250ms;
+    border-radius: 5px;
+    font-family: Bahnschrift;
+    font-size: 16px;
+}
+
+.SecondPlaceholder {
+    background: black;
+    border-style: hidden;
+    border-color: white;
+    text-align: left;
+    color: white;
+    margin: 10px 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: ease white 250ms;
+    border-radius: 5px;
+    font-family: Bahnschrift;
+    font-size: 16px;
+}
+
 .Portfolio:hover {
     /*//text-decoration: underline;*/
     text-decoration: underline;
