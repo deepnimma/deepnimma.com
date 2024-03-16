@@ -3,7 +3,7 @@ import React from "react";
 
 const Investigates: React.FC = () => {
     return (
-        <div className="textHolder">
+        <div className="investigatesCon">
             <span className="investigatesText">Deepesh Nimma Investigates.</span>
         </div>
     ) // return
