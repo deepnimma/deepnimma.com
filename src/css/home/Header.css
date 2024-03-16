@@ -60,6 +60,21 @@
     font-size: 16px;
 }
 
+.Home {
+    background: black;
+    border-style: hidden;
+    border-color: white;
+    text-align: left;
+    color: white;
+    margin: 10px 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: ease white 250ms;
+    border-radius: 5px;
+    font-family: Bahnschrift, ui-monospace;
+    font-size: 2vh;
+}
+
 .Portfolio {
     background: black;
     border-style: hidden;
@@ -88,6 +103,12 @@
     border-radius: 5px;
     font-family: Bahnschrift, ui-monospace;
     font-size: 2vh;
+}
+
+.Home:hover {
+    /*//text-decoration: underline;*/
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
 }
 
 .Portfolio:hover {
