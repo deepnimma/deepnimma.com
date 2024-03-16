@@ -1,4 +1,4 @@
-class LinkButtons {
+class LinkButton {
     name!: string;
     link: string;
     displayText: string;
@@ -10,14 +10,10 @@ class LinkButtons {
     }; // constructor
 } // Linkbuttons
 
-class NavBarButtons extends LinkButtons {
-    actualLink: string;
-
+class NavBarButton extends LinkButton {
     constructor(link: string = "", displayText: string = "", name: string = "") {
         super(link, displayText, name);
-
-        this.actualLink = "https://deepnimma.com/" + link;
     }; // constructor
 } // NavBarButtons
 
-export { LinkButtons, NavBarButtons };
+export { LinkButton, NavBarButton };

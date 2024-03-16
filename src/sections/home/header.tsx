@@ -4,10 +4,10 @@ import { tabs } from "../../objects/navbar";
 
 const NavBar: React.FC = () => {
     return <div className="pages">
-        <a href={tabs[0].actualLink} target="_blank" rel={"noreferrer"}>
+        <a href={tabs[0].link} target="_blank" rel={"noreferrer"}>
             <button className={tabs[0].name}>{tabs[0].name}</button>
         </a>
-        <a href={tabs[1].actualLink} target={"_blank"} rel={"noreferrer"}>
+        <a href={tabs[1].link} target={"_blank"} rel={"noreferrer"}>
             <button className={tabs[1].name}>{tabs[1].name}</button>
         </a>
     </div>
