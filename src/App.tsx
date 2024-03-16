@@ -7,6 +7,7 @@ import {
     Routes,
     Route,
 } from "react-router-dom"
+import Portfolio from "./sections/pages/portfolio";
 
 const Home: React.FC = () => {
     return (
@@ -22,6 +23,7 @@ const App: React.FC = () => {
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/investigates" element={<Investigates />} />
             </Routes>
         </Router>
