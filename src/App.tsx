@@ -22,9 +22,21 @@ const App: React.FC = () => {
         <Router>
             <Header />
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/portfolio" element={<Portfolio />} />
-                <Route path="/investigates" element={<Investigates />} />
+                <Route
+                    path={"/"}
+                    element={<Home />}
+                    caseSensitive={false}
+                    />
+                <Route
+                    path={"/portfolio"}
+                    element={<Portfolio />}
+                    caseSensitive={false}
+                    />
+                <Route
+                    path={"/investigates"}
+                    element={<Investigates />}
+                    caseSensitive={false}
+                    />
             </Routes>
         </Router>
     )
