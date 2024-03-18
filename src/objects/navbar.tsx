@@ -7,7 +7,7 @@ const linkTexts: string[] = [
 ]
 
 const ends: string[] = [
-    "",
+    "/",
     "portfolio",
     "investigates",
 ] // deepnimma.com/<end goes here>
