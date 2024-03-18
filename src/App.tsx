@@ -20,26 +20,39 @@ const Home: React.FC = () => {
 const App: React.FC = () => {
     return (
         <Router>
-            <Header />
             <Routes>
                 <Route
                     path={"/"}
-                    element={<Home />}
-                    caseSensitive={false}
+                    element={
+                        <div>
+                            <Header />
+                            <Body />
+                        </div>
+                    }
                     />
                 <Route
                     path={"/portfolio"}
-                    element={<Portfolio />}
+                    element={
+                        <div>
+                            <Header />
+                            <Portfolio />
+                        </div>
+                    }
                     caseSensitive={false}
                     />
                 <Route
                     path={"/investigates"}
-                    element={<Investigates />}
+                    element={
+                        <div>
+                            <Header />
+                            <Investigates />
+                        </div>
+                    }
                     caseSensitive={false}
                     />
             </Routes>
         </Router>
-    )
-}
+    ) // return
+} // App
 
 export default App;
