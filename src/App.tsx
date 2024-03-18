@@ -26,7 +26,7 @@ const App: React.FC = () => {
                     element={
                         <div>
                             <Header />
-                            <Body />
+                            <Home />
                         </div>
                     }
                     />
