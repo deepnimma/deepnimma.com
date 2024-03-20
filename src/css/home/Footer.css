@@ -1,0 +1,56 @@
+.footer {
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerNavBar {
+    background: transparent;
+    font-family: Bahnschrift, ui-monospace;
+    font-size: 16px
+}
+
+.Changelog {
+    background: black;
+    border-style: hidden;
+    border-color: white;
+    text-align: center;
+    color: white;
+    margin: 10px 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: ease white 250ms;
+    border-radius: 5px;
+    font-family: Bahnschrift, ui-monospace;
+    font-size: 1.75vh;
+}
+
+.Planned {
+    background: black;
+    border-style: hidden;
+    border-color: white;
+    text-align: center;
+    color: white;
+    margin: 10px 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: ease white 250ms;
+    border-radius: 5px;
+    font-family: Bahnschrift, ui-monospace;
+    font-size: 1.75vh;
+}
+
+.Copyright {
+    background: black;
+    border-style: hidden;
+    border-color: white;
+    text-align: center;
+    color: white;
+    margin: 10px 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: ease white 250ms;
+    border-radius: 5px;
+    font-family: Bahnschrift, ui-monospace;
+    font-size: 1.75vh;
+}

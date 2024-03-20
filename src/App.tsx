@@ -1,6 +1,7 @@
 import './css/home/App.css';
 import { Header } from "./sections/home/header"
 import { Body } from "./sections/home/body"
+import { Footer } from "./sections/home/footer"
 import Investigates from "./sections/pages/investigates";
 import {
     BrowserRouter as Router,
@@ -27,6 +28,7 @@ const App: React.FC = () => {
                         <div>
                             <Header />
                             <Home />
+                            <Footer />
                         </div>
                     }
                     />
@@ -36,6 +38,7 @@ const App: React.FC = () => {
                         <div>
                             <Header />
                             <Portfolio />
+                            <Footer />
                         </div>
                     }
                     caseSensitive={false}
@@ -46,6 +49,7 @@ const App: React.FC = () => {
                         <div>
                             <Header />
                             <Investigates />
+                            <Footer />
                         </div>
                     }
                     caseSensitive={false}

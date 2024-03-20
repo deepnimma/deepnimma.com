@@ -1,6 +1,6 @@
 import '../../css/home/Header.css'
 import { githubBtn, linkedInBtn, instaBtn } from '../../objects/socialsbuttons';
-import { tabs } from "../../objects/navbar";
+import { tabs } from "../../objects/headerNavBar";
 
 const NavBar: React.FC = () => {
     return <div className="pages">
