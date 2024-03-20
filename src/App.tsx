@@ -9,6 +9,9 @@ import {
     Route,
 } from "react-router-dom"
 import Portfolio from "./sections/pages/portfolio";
+import Changelog from "./sections/pages/changelog";
+import Planned from "./sections/pages/planned";
+import WebsiteCopyright from "./sections/pages/websiteCopyright";
 
 const Home: React.FC = () => {
     return (
@@ -54,6 +57,39 @@ const App: React.FC = () => {
                     }
                     caseSensitive={false}
                     />
+                <Route
+                    path={"/changelog"}
+                    element={
+                        <div>
+                            <Header />
+                            <Changelog />
+                            <Footer />
+                        </div>
+                    }
+                    caseSensitive={false}
+                />
+                <Route
+                    path={"/planned"}
+                    element={
+                        <div>
+                            <Header />
+                            <Planned />
+                            <Footer />
+                        </div>
+                    }
+                    caseSensitive={false}
+                />
+                <Route
+                    path={"/copyright"}
+                    element={
+                        <div>
+                            <Header />
+                            <WebsiteCopyright />
+                            <Footer />
+                        </div>
+                    }
+                    caseSensitive={false}
+                />
             </Routes>
         </Router>
     ) // return

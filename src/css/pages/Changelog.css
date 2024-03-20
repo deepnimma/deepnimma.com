@@ -1,0 +1,18 @@
+.changelogCon {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    font-family: 'Bahnschrift', ui-monospace;
+}
+
+.changelogText {
+    text-transform: capitalize;
+    font-size: 3.776vw;
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
