@@ -8,11 +8,9 @@
 }
 
 .copyrightText {
-    text-transform: capitalize;
-    font-size: 3.776vw;
     color: black;
-    position: absolute;
+    position: relative;
     left: 50%;
-    top: 50%;
+    top: 70%;
     transform: translate(-50%, -50%);
 }
