@@ -42,9 +42,7 @@ const MainPageFooter: React.FC = () => {
     return (
         <div className={"footer"}>
             <SocialButtons />
-            <div className={"footerNavBar"}>
-                <NavBar />
-            </div>
+            <NavBar />
         </div>
     ) // return
 } // Mainpagefooter

@@ -17,18 +17,12 @@ import {lazy} from "react";
 const Home: React.FC = () => {
     return (
         <div>
+            <MainPageHeader />
             <Body />
             <MainPageFooter/>
         </div>
     )
 }
-
-const MainPage: React.FC = () => {
-    return <div>
-        <MainPageHeader />
-        <Home />
-    </div>
-} // MainPage
 
 const App: React.FC = () => {
     return (
@@ -36,7 +30,7 @@ const App: React.FC = () => {
             <Routes>
                 <Route
                     path={"/"}
-                    element={<MainPage />}
+                    element={<Home />}
                     />
                 <Route
                     path={"/camera"}
