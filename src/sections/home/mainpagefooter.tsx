@@ -1,4 +1,4 @@
-import '../../css/home/Footer.css';
+import '../../css/home/MainPageFooter.css';
 import { tabs } from "../../objects/footerNavBar"
 import {githubBtn, instaBtn, linkedInBtn} from "../../objects/socialsbuttons";
 
@@ -38,7 +38,7 @@ const SocialButtons: React.FC = () => {
     </div>
 }; // socialsButtons
 
-const Footer: React.FC = () => {
+const MainPageFooter: React.FC = () => {
     return (
         <div className={"footer"}>
             <SocialButtons />
@@ -47,6 +47,6 @@ const Footer: React.FC = () => {
             </div>
         </div>
     ) // return
-} // Footer
+} // Mainpagefooter
 
-export { Footer }
+export { MainPageFooter }

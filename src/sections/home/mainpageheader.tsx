@@ -1,5 +1,4 @@
-import '../../css/home/Header.css'
-import { githubBtn, linkedInBtn, instaBtn } from '../../objects/socialsbuttons';
+import '../../css/home/MainPageHeader.css'
 import { tabs } from "../../objects/headerNavBar";
 
 const NavBar: React.FC = () => {
@@ -16,12 +15,12 @@ const NavBar: React.FC = () => {
     </div>
 }; // NavBar
 
-const Header: React.FC = () => {
+const MainPageHeader: React.FC = () => {
     return <div className="header">
         <div className={"navBar"}>
             <NavBar />
         </div>
     </div>
-}; // Header
+}; // MainPageHeader
 
-export { Header }
+export { MainPageHeader }
