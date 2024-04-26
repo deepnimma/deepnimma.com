@@ -8,7 +8,7 @@ import {
     Routes,
     Route,
 } from "react-router-dom"
-import Portfolio from "./sections/pages/portfolio";
+import Camera from "./sections/pages/camera";
 import Changelog from "./sections/pages/changelog";
 import Planned from "./sections/pages/planned";
 import WebsiteCopyright from "./sections/pages/websiteCopyright";
@@ -36,11 +36,11 @@ const App: React.FC = () => {
                     }
                     />
                 <Route
-                    path={"/portfolio"}
+                    path={"/camera"}
                     element={
                         <div>
                             <Header />
-                            <Portfolio />
+                            <Camera />
                             <Footer />
                         </div>
                     }
