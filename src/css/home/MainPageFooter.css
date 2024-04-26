@@ -2,12 +2,11 @@
     background: black;
     display: flex;
     flex-direction: column;
-}
-
-.footerNavBar {
-    background: transparent;
-    font-family: Bahnschrift, ui-monospace;
-    font-size: 16px
+    font-family: Bahnshrift, ui-monospace;
+    font-size: 16px;
+    position: relative;
+    bottom: 0;
+    overflow: hidden; /* Removes ugly whitespace at the bottom of the page */
 }
 
 .Changelog {

@@ -2,13 +2,13 @@ import {NavBarButton} from "./linkButton";
 
 const linkTexts: string[] = [
     "Home",
-    "Portfolio",
+    "Camera",
     "Investigates",
 ]
 
 const ends: string[] = [
     "/",
-    "portfolio",
+    "camera",
     "investigates",
 ] // deepnimma.com/<end goes here>
 

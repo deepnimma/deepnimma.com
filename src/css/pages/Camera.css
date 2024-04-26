@@ -1,13 +1,13 @@
-.portfolioCon {
+.cameraCon {
     width: 100vw;
-    height: 100vh;
+    height: 90.550vh;
     display: flex;
     flex-direction: column;
     background-color: lightgrey;
     font-family: 'Bahnschrift', ui-monospace;
 }
 
-.portfolioText {
+.cameraText {
     text-transform: capitalize;
     font-size: 3.776vw;
     color: black;

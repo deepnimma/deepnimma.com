@@ -1,20 +1,22 @@
-import '../../css/home/Header.css'
-import { githubBtn, linkedInBtn, instaBtn } from '../../objects/socialsbuttons';
-import { tabs } from "../../objects/headerNavBar";
+import '../../css/home/MainPageFooter.css';
+import { tabs } from "../../objects/footerNavBar"
+import {githubBtn, instaBtn, linkedInBtn} from "../../objects/socialsbuttons";
 
 const NavBar: React.FC = () => {
-    return <div className="pages">
-        <a href={tabs[0].link} rel={"noopener noreferrer"}>
-            <button className={tabs[0].name}>{tabs[0].name}</button>
-        </a>
-        <a href={tabs[1].link} rel={"noopener noreferrer"}>
-            <button className={tabs[1].name}>{tabs[1].name}</button>
-        </a>
-        <a href={tabs[2].link} rel={"noopener noreferrer"}>
-            <button className={tabs[2].name}>{tabs[2].name}</button>
-        </a>
-    </div>
-}; // NavBar
+    return (
+        <div className={"pages"}>
+            <a href={tabs[0].link} rel={"noopener noreferrer"}>
+                <button className={tabs[0].name}>{tabs[0].name}</button>
+            </a>
+            <a href={tabs[1].link} rel={"noopener noreferrer"}>
+                <button className={tabs[1].name}>{tabs[1].name}</button>
+            </a>
+            <a href={tabs[2].link} rel={"noopener noreferrer"}>
+                <button className={tabs[2].name}>{tabs[2].name}</button>
+            </a>
+        </div>
+    ) // return
+} // NavBar
 
 const SocialButtons: React.FC = () => {
     return <div className="socials">
@@ -36,13 +38,13 @@ const SocialButtons: React.FC = () => {
     </div>
 }; // socialsButtons
 
-const Header: React.FC = () => {
-    return <div className="header">
-        <SocialButtons />
-        <div className={"navBar"}>
+const MainPageFooter: React.FC = () => {
+    return (
+        <div className={"footer"}>
+            <SocialButtons />
             <NavBar />
         </div>
-    </div>
-}; // Header
+    ) // return
+} // Mainpagefooter
 
-export { Header }
+export { MainPageFooter }

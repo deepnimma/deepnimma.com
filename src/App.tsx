@@ -1,22 +1,25 @@
 import './css/home/App.css';
-import { Header } from "./sections/home/header"
+import { MainPageHeader } from "./sections/home/mainpageheader"
 import { Body } from "./sections/home/body"
-import { Footer } from "./sections/home/footer"
+import { MainPageFooter } from "./sections/home/mainpagefooter"
 import Investigates from "./sections/pages/investigates";
 import {
     BrowserRouter as Router,
     Routes,
     Route,
 } from "react-router-dom"
-import Portfolio from "./sections/pages/portfolio";
+import Camera from "./sections/pages/camera";
 import Changelog from "./sections/pages/changelog";
 import Planned from "./sections/pages/planned";
 import WebsiteCopyright from "./sections/pages/websiteCopyright";
+import {lazy} from "react";
 
 const Home: React.FC = () => {
     return (
         <div>
+            <MainPageHeader />
             <Body />
+            <MainPageFooter/>
         </div>
     )
 }
@@ -27,21 +30,15 @@ const App: React.FC = () => {
             <Routes>
                 <Route
                     path={"/"}
-                    element={
-                        <div>
-                            <Header />
-                            <Home />
-                            <Footer />
-                        </div>
-                    }
+                    element={<Home />}
                     />
                 <Route
-                    path={"/portfolio"}
+                    path={"/camera"}
                     element={
                         <div>
-                            <Header />
-                            <Portfolio />
-                            <Footer />
+                            <MainPageHeader />
+                            <Camera />
+                            <MainPageFooter />
                         </div>
                     }
                     caseSensitive={false}
@@ -50,9 +47,9 @@ const App: React.FC = () => {
                     path={"/investigates"}
                     element={
                         <div>
-                            <Header />
+                            <MainPageHeader />
                             <Investigates />
-                            <Footer />
+                            <MainPageFooter />
                         </div>
                     }
                     caseSensitive={false}
@@ -61,9 +58,9 @@ const App: React.FC = () => {
                     path={"/changelog"}
                     element={
                         <div>
-                            <Header />
+                            <MainPageHeader />
                             <Changelog />
-                            <Footer />
+                            <MainPageFooter />
                         </div>
                     }
                     caseSensitive={false}
@@ -72,9 +69,9 @@ const App: React.FC = () => {
                     path={"/planned"}
                     element={
                         <div>
-                            <Header />
+                            <MainPageHeader />
                             <Planned />
-                            <Footer />
+                            <MainPageFooter />
                         </div>
                     }
                     caseSensitive={false}
@@ -83,9 +80,9 @@ const App: React.FC = () => {
                     path={"/copyright"}
                     element={
                         <div>
-                            <Header />
+                            <MainPageHeader />
                             <WebsiteCopyright />
-                            <Footer />
+                            <MainPageFooter />
                         </div>
                     }
                     caseSensitive={false}
