@@ -8,16 +8,6 @@
     font-family: 'Bahnschrift', ui-monospace;
 }
 
-/* @media all and (max-width: 1200px) and (min-width: 800px) {
-    .desc {
-        font-size: 1rem;
-    }
-
-    .nameText {
-        font-size: 3vh;
-    }
-} */
-  
 .nameText {
     text-transform: capitalize;
     font-size: 3.14vh;
@@ -31,7 +21,7 @@
 .desc {
     text-transform: capitalize;
     color: red;
-    position: relative;
+    position: absolute;
     top: 52.5%
 }
 

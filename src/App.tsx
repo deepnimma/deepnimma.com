@@ -18,6 +18,7 @@ const Home: React.FC = () => {
     return (
         <div>
             <Body />
+            <MainPageFooter/>
         </div>
     )
 }
@@ -26,7 +27,6 @@ const MainPage: React.FC = () => {
     return <div>
         <MainPageHeader />
         <Home />
-        <MainPageFooter />
     </div>
 } // MainPage
 
@@ -36,7 +36,7 @@ const App: React.FC = () => {
             <Routes>
                 <Route
                     path={"/"}
-                    element={<MainPage/>}
+                    element={<MainPage />}
                     />
                 <Route
                     path={"/camera"}
