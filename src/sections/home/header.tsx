@@ -38,7 +38,6 @@ const SocialButtons: React.FC = () => {
 
 const Header: React.FC = () => {
     return <div className="header">
-        <SocialButtons />
         <div className={"navBar"}>
             <NavBar />
         </div>
