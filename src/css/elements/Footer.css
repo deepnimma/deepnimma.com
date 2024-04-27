@@ -1,0 +1,90 @@
+.elementsfooter {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    font-family: Bahnshrift, ui-monospace;
+    font-size: 16px;
+    /*min-height: calc(100vh - 170px);*/
+    grid-column: 2;
+    position: relative;
+    /*overflow: hidden; !* Removes ugly whitespace at the bottom of the page *!*/
+}
+
+.Changelog {
+    background: black;
+    border-style: hidden;
+    border-color: white;
+    text-align: center;
+    color: white;
+    margin: 10px 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: ease white 250ms;
+    border-radius: 5px;
+    font-family: Bahnschrift, ui-monospace;
+    font-size: 1.75vh;
+}
+
+.Planned {
+    background: black;
+    border-style: hidden;
+    border-color: white;
+    text-align: center;
+    color: white;
+    margin: 10px 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: ease white 250ms;
+    border-radius: 5px;
+    font-family: Bahnschrift, ui-monospace;
+    font-size: 1.75vh;
+}
+
+.Copyright {
+    background: black;
+    border-style: hidden;
+    border-color: white;
+    text-align: center;
+    color: white;
+    margin: 10px 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: ease white 250ms;
+    border-radius: 5px;
+    font-family: Bahnschrift, ui-monospace;
+    font-size: 1.75vh;
+}
+
+.socials {
+    opacity: 1;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    right: 0;
+}
+.githubBtn {
+    background: transparent;
+    border-color: black;
+    border-style: solid;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.instagramBtn {
+    background: transparent;
+    border-color: black;
+    border-style: solid;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.linkedinBtn {
+    background: transparent;
+    border-color: black;
+    border-style: solid;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
