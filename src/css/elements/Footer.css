@@ -4,10 +4,8 @@
     flex-direction: column;
     font-family: Bahnshrift, ui-monospace;
     font-size: 16px;
-    /*min-height: calc(100vh - 170px);*/
-    grid-column: 2;
     position: relative;
-    /*overflow: hidden; !* Removes ugly whitespace at the bottom of the page *!*/
+    overflow: hidden; /* Removes ugly whitespace at the bottom of the page */
 }
 
 .Changelog {

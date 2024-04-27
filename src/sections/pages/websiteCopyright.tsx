@@ -383,7 +383,7 @@ const license = "" +
 const WebsiteCopyright: React.FC = () => {
     return (
         <div className={"copyrightCon"}>
-            <Typography className="copyrightText" gutterBottom={true}>{license}</Typography>
+            <Typography className="copyrightText" fontFamily={"Bahnschrift, ui-monospace"}>{license}</Typography>
         </div>
     ) // return
 } // WebsiteCopyright
