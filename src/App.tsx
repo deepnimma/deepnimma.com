@@ -14,6 +14,7 @@ import Camera from "./sections/pages/camera";
 import Changelog from "./sections/pages/changelog";
 import Planned from "./sections/pages/planned";
 import WebsiteCopyright from "./sections/pages/websiteCopyright";
+import Edinburgh from "./sections/camera/edinburgh";
 
 const Home: React.FC = () => {
     return (
@@ -25,23 +26,35 @@ const Home: React.FC = () => {
     )
 }
 
+const Copyright: React.FC = () => {
+    return (<div className={"copyrightCon"}>
+        <Header/>
+        <WebsiteCopyright/>
+        <Footer/>
+    </div>
+    );
+};
+
+const MyCamera: React.FC = () => {
+    return (<div>
+        <Header />
+        <Camera />
+        <Footer />
+    </div>
+    );
+};
+
 const App: React.FC = () => {
     return (
         <Router>
             <Routes>
                 <Route
                     path={"/"}
-                    element={<Home />}
-                    />
+                    element={<Home/>}
+                />
                 <Route
                     path={"/camera"}
-                    element={
-                        <div>
-                            <MainPageHeader />
-                            <Camera />
-                            <MainPageFooter />
-                        </div>
-                    }
+                    element={<MyCamera />}
                     caseSensitive={false}
                     />
                 <Route
@@ -79,13 +92,12 @@ const App: React.FC = () => {
                 />
                 <Route
                     path={"/copyright"}
-                    element={
-                        <div className={"copyrightCon"}>
-                            <Header />
-                            <WebsiteCopyright />
-                            <Footer />
-                        </div>
-                    }
+                    element={<Copyright />}
+                    caseSensitive={false}
+                />
+                <Route
+                    path={"/camera/edinburgh"}
+                    element={<Edinburgh />}
                     caseSensitive={false}
                 />
             </Routes>
