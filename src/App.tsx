@@ -14,7 +14,6 @@ import Camera from "./sections/pages/camera";
 import Changelog from "./sections/pages/changelog";
 import Planned from "./sections/pages/planned";
 import WebsiteCopyright from "./sections/pages/websiteCopyright";
-import {lazy} from "react";
 
 const Home: React.FC = () => {
     return (

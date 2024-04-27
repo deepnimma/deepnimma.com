@@ -1,5 +1,5 @@
 import '../../css/pages/WebsiteCopyright.css'
-import React, {Fragment} from "react";
+import React from "react";
 import {Typography} from "@mui/material";
 
 const license = "" +
