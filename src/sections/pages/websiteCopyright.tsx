@@ -1,7 +1,8 @@
 import '../../css/pages/WebsiteCopyright.css'
-import React from "react";
+import React, {Fragment} from "react";
+import {Typography} from "@mui/material";
 
-let license = "" +
+const license = "" +
     "Mozilla Public License Version 2.0\n" +
     "==================================\n" +
     "\n" +
@@ -378,10 +379,11 @@ let license = "" +
 
 // I didn't want to bother dealing with reading a file lol
 
+
 const WebsiteCopyright: React.FC = () => {
     return (
         <div className={"copyrightCon"}>
-            <span className={"copyrightText"}>{license}</span>
+            <Typography className="copyrightText" fontFamily={"Bahnschrift, ui-monospace"}>{license}</Typography>
         </div>
     ) // return
 } // WebsiteCopyright

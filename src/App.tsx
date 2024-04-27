@@ -1,7 +1,9 @@
 import './css/home/App.css';
 import { MainPageHeader } from "./sections/home/mainpageheader"
+import { Header } from "./sections/elements/header"
 import { Body } from "./sections/home/body"
 import { MainPageFooter } from "./sections/home/mainpagefooter"
+import { Footer } from "./sections/elements/footer"
 import Investigates from "./sections/pages/investigates";
 import {
     BrowserRouter as Router,
@@ -58,9 +60,9 @@ const App: React.FC = () => {
                     path={"/changelog"}
                     element={
                         <div>
-                            <MainPageHeader />
+                            <Header />
                             <Changelog />
-                            <MainPageFooter />
+                            <Footer />
                         </div>
                     }
                     caseSensitive={false}
@@ -79,10 +81,10 @@ const App: React.FC = () => {
                 <Route
                     path={"/copyright"}
                     element={
-                        <div>
-                            <MainPageHeader />
+                        <div className={"copyrightCon"}>
+                            <Header />
                             <WebsiteCopyright />
-                            <MainPageFooter />
+                            <Footer />
                         </div>
                     }
                     caseSensitive={false}

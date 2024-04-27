@@ -1,54 +1,7 @@
-.header {
+.elementsheader {
     background: black;
     display: flex;
     flex-direction: column;
-}
-
-.socials {
-    opacity: 1;
-    position: absolute;
-}
-
-.githubBtn {
-    background: transparent;
-    border-color: black;
-    border-style: solid;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
-
-.instagramBtn {
-    background: transparent;
-    border-color: black;
-    border-style: solid;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
-
-.linkedinBtn {
-    background: transparent;
-    border-color: black;
-    border-style: solid;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
-
-.actualLinkedinBtn {
-    width: 30px;
-    height: 30px;
-}
-
-.actualGithubBtn {
-    width: 30px;
-    height: 30px;
-}
-
-.actualInstagramBtn {
-    width: 30px;
-    height: 30px;
 }
 
 .navBar {
