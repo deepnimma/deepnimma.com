@@ -7,9 +7,9 @@ const linkTexts: string[] = [
 ]
 
 const ends: string[] = [
-    "changelog",
-    "portfolio",
-    "copyright",
+    "/changelog",
+    "/portfolio",
+    "/copyright",
 ]
 
 const tabs: NavBarButton[] = []

@@ -8,7 +8,7 @@ import Investigates from "./sections/pages/investigates";
 import {
     BrowserRouter as Router,
     Routes,
-    Route,
+    Route, Link,
 } from "react-router-dom"
 import Camera from "./sections/pages/camera";
 import Changelog from "./sections/pages/changelog";

@@ -8,8 +8,8 @@ const linkTexts: string[] = [
 
 const ends: string[] = [
     "/",
-    "camera",
-    "investigates",
+    "/camera",
+    "/investigates",
 ] // deepnimma.com/<end goes here>
 
 const tabs: NavBarButton[] = []
