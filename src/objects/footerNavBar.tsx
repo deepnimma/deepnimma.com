@@ -8,7 +8,7 @@ const linkTexts: string[] = [
 
 const ends: string[] = [
     "/changelog",
-    "/portfolio",
+    "/planned",
     "/copyright",
 ]
 
