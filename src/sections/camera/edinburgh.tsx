@@ -5,7 +5,7 @@ import React from "react";
 
 let pic_names: string[] = []
 
-for (let i = 24; i <= 46; i++) pic_names.push(String(i))
+for (let i = 26; i <= 48; i++) pic_names.push(String(i))
 
 const Masonry: React.FC = () => {
     return (
