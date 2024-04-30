@@ -36,6 +36,186 @@ const TwentyThreePics: React.FC = () => {
                         <CardMedia
                             component={"img"}
                             height={140}
+                            image={require("../../data/portfolio/display_images/miscellaneous.jpg")}
+                            alt={"dublin picture"}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Misc.
+                            </Typography>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Other random and uncategorized photos from the year!
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Grid2>
+            <Grid2 xs={4}>
+                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+                    <CardActionArea>
+                        <CardMedia
+                            component={"img"}
+                            height={140}
+                            image={require("../../data/portfolio/display_images/barcelona.jpg")}
+                            alt={"dublin picture"}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Barcelona
+                            </Typography>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Barca over Real Madrid anyday.
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Grid2>
+            <Grid2 xs={4}>
+                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+                    <CardActionArea>
+                        <CardMedia
+                            component={"img"}
+                            height={140}
+                            image={require("../../data/portfolio/display_images/budapest.jpg")}
+                            alt={"dublin picture"}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Budapest
+                            </Typography>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                My first time ever experiencing snow ;)
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Grid2>
+            <Grid2 xs={4}>
+                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+                    <CardActionArea>
+                        <CardMedia
+                            component={"img"}
+                            height={140}
+                            image={require("../../data/portfolio/display_images/belgrade.jpg")}
+                            alt={"dublin picture"}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Belgrade
+                            </Typography>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Absolutely stunned by this city.
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Grid2>
+            <Grid2 xs={4}>
+                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+                    <CardActionArea>
+                        <CardMedia
+                            component={"img"}
+                            height={140}
+                            image={require("../../data/portfolio/display_images/berlin.jpg")}
+                            alt={"dublin picture"}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Berlin
+                            </Typography>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Mein Deutsch ist sehr gut!
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Grid2>
+            <Grid2 xs={4}>
+                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+                    <CardActionArea>
+                        <CardMedia
+                            component={"img"}
+                            height={140}
+                            image={require("../../data/portfolio/display_images/london.jpg")}
+                            alt={"dublin picture"}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                London
+                            </Typography>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                I miss a good public transit system.
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Grid2>
+            <Grid2 xs={4}>
+                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+                    <CardActionArea>
+                        <CardMedia
+                            component={"img"}
+                            height={140}
+                            image={require("../../data/portfolio/display_images/vatican.jpg")}
+                            alt={"dublin picture"}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Vatican
+                            </Typography>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Holy Moly Guacamole!
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Grid2>
+            <Grid2 xs={4}>
+                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+                    <CardActionArea>
+                        <CardMedia
+                            component={"img"}
+                            height={140}
+                            image={require("../../data/portfolio/display_images/rome.jpg")}
+                            alt={"dublin picture"}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Rome
+                            </Typography>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                You'd think everyone was over 20ft tall if you ever visited Rome.
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Grid2>
+            <Grid2 xs={4}>
+                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+                    <CardActionArea>
+                        <CardMedia
+                            component={"img"}
+                            height={140}
+                            image={require("../../data/portfolio/display_images/stockholm.jpg")}
+                            alt={"dublin picture"}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Stockholm
+                            </Typography>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                More like Stork's Home (I did not see a single stork here).
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Grid2>
+            <Grid2 xs={4}>
+                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+                    <CardActionArea>
+                        <CardMedia
+                            component={"img"}
+                            height={140}
                             image={require("../../data/portfolio/display_images/copenhagen.jpg")}
                             alt={"dublin picture"}
                         />
