@@ -14,7 +14,9 @@ import Camera from "./sections/pages/camera";
 import Changelog from "./sections/pages/changelog";
 import Planned from "./sections/pages/planned";
 import WebsiteCopyright from "./sections/pages/websiteCopyright";
+// @ts-ignore
 import Edinburgh from "./sections/camera/twentythree/edinburgh";
+import Dublin from "./sections/camera/twentythree/dublin";
 
 const Home: React.FC = () => {
     return (
@@ -98,6 +100,11 @@ const App: React.FC = () => {
                 <Route
                     path={"/camera/edinburgh"}
                     element={<Edinburgh />}
+                    caseSensitive={false}
+                />
+                <Route
+                    path={"/camera/dublin"}
+                    element={<Dublin />}
                     caseSensitive={false}
                 />
             </Routes>

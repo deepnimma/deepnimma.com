@@ -11,7 +11,7 @@ const Masonry: React.FC = () => {
                 {pic_names.map((num) => (
                     <ImageListItem key={num}>
                         <img
-                            src={require(`../../data/portfolio/2023/london/${num}.jpg`)}
+                            src={require(`../../../data/portfolio/2023/london/${num}.jpg`)}
                             alt={num}
                             loading={"lazy"}
                             />
