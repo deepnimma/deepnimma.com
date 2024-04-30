@@ -29,9 +29,9 @@ const TwentyThreeTitle: React.FC = () => {
 
 const TwentyThreePics: React.FC = () => {
     return (
-        <Grid2 container rowSpacing={1} columnSpacing={2} columns={12}>
-            <Grid2 xs={4}>
-                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+        <Grid2 container rowSpacing={1} columnSpacing={2} justifyContent={"center"}>
+            <Grid2>
+                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea>
                         <CardMedia
                             component={"img"}
@@ -50,8 +50,8 @@ const TwentyThreePics: React.FC = () => {
                     </CardActionArea>
                 </Card>
             </Grid2>
-            <Grid2 xs={4}>
-                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+            <Grid2>
+                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea>
                         <CardMedia
                             component={"img"}
@@ -70,8 +70,8 @@ const TwentyThreePics: React.FC = () => {
                     </CardActionArea>
                 </Card>
             </Grid2>
-            <Grid2 xs={4}>
-                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+            <Grid2>
+                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea>
                         <CardMedia
                             component={"img"}
@@ -90,8 +90,8 @@ const TwentyThreePics: React.FC = () => {
                     </CardActionArea>
                 </Card>
             </Grid2>
-            <Grid2 xs={4}>
-                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+            <Grid2>
+                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea>
                         <CardMedia
                             component={"img"}
@@ -110,8 +110,8 @@ const TwentyThreePics: React.FC = () => {
                     </CardActionArea>
                 </Card>
             </Grid2>
-            <Grid2 xs={4}>
-                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+            <Grid2>
+                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea>
                         <CardMedia
                             component={"img"}
@@ -130,8 +130,8 @@ const TwentyThreePics: React.FC = () => {
                     </CardActionArea>
                 </Card>
             </Grid2>
-            <Grid2 xs={4}>
-                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+            <Grid2>
+                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea>
                         <CardMedia
                             component={"img"}
@@ -150,8 +150,8 @@ const TwentyThreePics: React.FC = () => {
                     </CardActionArea>
                 </Card>
             </Grid2>
-            <Grid2 xs={4}>
-                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+            <Grid2>
+                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea>
                         <CardMedia
                             component={"img"}
@@ -170,8 +170,8 @@ const TwentyThreePics: React.FC = () => {
                     </CardActionArea>
                 </Card>
             </Grid2>
-            <Grid2 xs={4}>
-                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+            <Grid2>
+                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea>
                         <CardMedia
                             component={"img"}
@@ -190,8 +190,8 @@ const TwentyThreePics: React.FC = () => {
                     </CardActionArea>
                 </Card>
             </Grid2>
-            <Grid2 xs={4}>
-                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+            <Grid2>
+                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea>
                         <CardMedia
                             component={"img"}
@@ -210,8 +210,8 @@ const TwentyThreePics: React.FC = () => {
                     </CardActionArea>
                 </Card>
             </Grid2>
-            <Grid2 xs={4}>
-                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+            <Grid2>
+                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea>
                         <CardMedia
                             component={"img"}
@@ -230,8 +230,8 @@ const TwentyThreePics: React.FC = () => {
                     </CardActionArea>
                 </Card>
             </Grid2>
-            <Grid2 xs={4}>
-                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+            <Grid2>
+                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea>
                         <CardMedia
                             component={"img"}
@@ -250,8 +250,8 @@ const TwentyThreePics: React.FC = () => {
                     </CardActionArea>
                 </Card>
             </Grid2>
-            <Grid2 xs={4}>
-                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+            <Grid2>
+                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea>
                         <CardMedia
                             component={"img"}
@@ -270,8 +270,8 @@ const TwentyThreePics: React.FC = () => {
                     </CardActionArea>
                 </Card>
             </Grid2>
-            <Grid2 xs={4}>
-                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+            <Grid2>
+                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/edinburgh"}>
                         <CardMedia
                             component={"img"}
