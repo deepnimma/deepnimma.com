@@ -7,6 +7,12 @@
     font-family: 'Bahnschrift', ui-monospace;
 }
 
+.cameraConCon {
+    position: relative;
+    justify-content: center;
+    offset: auto;
+}
+
 .cameraText {
     text-transform: capitalize;
     font-size: 3.776vw;

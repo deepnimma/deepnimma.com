@@ -6,43 +6,110 @@ import {Link as RouterLink} from 'react-router-dom'
 
 const Camera: React.FC = () => {
     return (
-        <Grid2 container spacing={0}>
-            <Card sx={{maxWidth: 345}}>
-                <CardActionArea component={RouterLink} to={"/camera/edinburgh"}>
-                    <CardMedia
-                        component={"img"}
-                        height={140}
-                        image={require("../../data/portfolio/display_images/edinburgh.jpg")}
-                        alt={"edinburgh castle"}
+        <Grid2 container rowSpacing={0} columnSpacing={3} columns={1} className={"cameraConCon"}>
+            <Grid2>
+                <Grid2 xs display={"flex"} justifyContent={"center"} alignItems={"center"}>
+                    <TwentyThreeTitle />
+                </Grid2>
+                <Grid2 xs display={"flex"} justifyContent={"center"}>
+                    <TwentyThreePics />
+                </Grid2>
+            </Grid2>
+        </Grid2>
+    )
+} // FullGrid
+
+const TwentyThreeTitle: React.FC = () => {
+    return (
+        <Typography variant={"h1"} fontFamily={"Bahnschrift, ui-monospace"}>
+            2023
+        </Typography>
+    )
+}
+
+const TwentyThreePics: React.FC = () => {
+    return (
+        <Grid2 container rowSpacing={1} columnSpacing={2} columns={12}>
+            <Grid2 xs={4}>
+                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+                    <CardActionArea>
+                        <CardMedia
+                            component={"img"}
+                            height={140}
+                            image={require("../../data/portfolio/display_images/copenhagen.jpg")}
+                            alt={"dublin picture"}
                         />
-                    <CardContent>
-                        <Typography gutterBottom variant={"h5"} component={"div"}>
-                            Edinburgh
-                        </Typography>
-                        <Typography variant={"body2"} color={"text.secondary"}>
-                            I went to Edinburgh
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
-            <Card sx={{maxWidth: 345}}>
-                <CardActionArea>
-                    <CardMedia
-                        component={"img"}
-                        height={140}
-                        image={require("../../data/portfolio/display_images/dublin.jpg")}
-                        alt={"dublin picture but it's actually edinburgh"}
+                        <CardContent>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Copenhagen
+                            </Typography>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Copenhagen more like Copen-haven amirite.
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Grid2>
+            <Grid2 xs={4}>
+                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+                    <CardActionArea>
+                        <CardMedia
+                            component={"img"}
+                            height={140}
+                            image={require("../../data/portfolio/display_images/reykjavik.jpg")}
+                            alt={"dublin picture"}
                         />
-                    <CardContent>
-                        <Typography gutterBottom variant={"h5"} component={"div"}>
-                            Dublin
-                        </Typography>
-                        <Typography variant={"body2"} color={"text.secondary"}>
-                            Edinburgh pic though ^^^^
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
+                        <CardContent>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Reykjavik
+                            </Typography>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Icy Iceland (It wasn't really that cold tbh)
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Grid2>
+            <Grid2 xs={4}>
+                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+                    <CardActionArea>
+                        <CardMedia
+                            component={"img"}
+                            height={140}
+                            image={require("../../data/portfolio/display_images/dublin.jpg")}
+                            alt={"dublin picture but it's actually edinburgh"}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Dublin
+                            </Typography>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Love me some Ireland!
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Grid2>
+            <Grid2 xs={4}>
+                <Card sx={{maxWidth: 140, border: 2.5, borderRadius: 2, gap: 2}}>
+                    <CardActionArea component={RouterLink} to={"/camera/edinburgh"}>
+                        <CardMedia
+                            component={"img"}
+                            height={140}
+                            image={require("../../data/portfolio/display_images/edinburgh.jpg")}
+                            alt={"edinburgh castle"}
+                            />
+                        <CardContent>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnscrift, ui-monospace"}>
+                                Edinburgh
+                            </Typography>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnscrift, ui-monospace"}>
+                                I went to Edinburgh
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Grid2>
         </Grid2>
     )
 } // Camera
