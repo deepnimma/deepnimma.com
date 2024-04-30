@@ -15,8 +15,19 @@ import Changelog from "./sections/pages/changelog";
 import Planned from "./sections/pages/planned";
 import WebsiteCopyright from "./sections/pages/websiteCopyright";
 // @ts-ignore
-import Edinburgh from "./sections/camera/twentythree/edinburgh";
-import Dublin from "./sections/camera/twentythree/dublin";
+import Edinburgh from "./sections/camera/twentythree/edinburgh"
+import Dublin from "./sections/camera/twentythree/dublin"
+import Reykjavik from "./sections/camera/twentythree/reykjavik"
+import Copenhagen from "./sections/camera/twentythree/copenhagen"
+import Stockholm from "./sections/camera/twentythree/stockholm"
+import Rome from "./sections/camera/twentythree/rome"
+import Vatican from "./sections/camera/twentythree/vatican"
+import London from "./sections/camera/twentythree/london"
+import Berlin from "./sections/camera/twentythree/berlin"
+import Belgrade from "./sections/camera/twentythree/belgrade"
+import Budapest from "./sections/camera/twentythree/budapest"
+import Barcelona from "./sections/camera/twentythree/barcelona"
+import Misc from "./sections/camera/twentythree/misc"
 
 const Home: React.FC = () => {
     return (
@@ -105,6 +116,61 @@ const App: React.FC = () => {
                 <Route
                     path={"/camera/dublin"}
                     element={<Dublin />}
+                    caseSensitive={false}
+                />
+                <Route
+                    path={"/camera/reykjavik"}
+                    element={<Reykjavik />}
+                    caseSensitive={false}
+                />
+                <Route
+                    path={"/camera/copenhagen"}
+                    element={<Copenhagen />}
+                    caseSensitive={false}
+                />
+                <Route
+                    path={"/camera/stockholm"}
+                    element={<Stockholm />}
+                    caseSensitive={false}
+                />
+                <Route
+                    path={"/camera/rome"}
+                    element={<Rome />}
+                    caseSensitive={false}
+                />
+                <Route
+                    path={"/camera/vatican"}
+                    element={<Vatican />}
+                    caseSensitive={false}
+                />
+                <Route
+                    path={"/camera/london"}
+                    element={<London />}
+                    caseSensitive={false}
+                />
+                <Route
+                    path={"/camera/berlin"}
+                    element={<Berlin />}
+                    caseSensitive={false}
+                />
+                <Route
+                    path={"/camera/belgrade"}
+                    element={<Belgrade />}
+                    caseSensitive={false}
+                />
+                <Route
+                    path={"/camera/budapest"}
+                    element={<Budapest />}
+                    caseSensitive={false}
+                />
+                <Route
+                    path={"/camera/barcelona"}
+                    element={<Barcelona />}
+                    caseSensitive={false}
+                />
+                <Route
+                    path={"/camera/misc23"}
+                    element={<Misc />}
                     caseSensitive={false}
                 />
             </Routes>

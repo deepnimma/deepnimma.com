@@ -32,7 +32,7 @@ const TwentyThreePics: React.FC = () => {
         <Grid2 container rowSpacing={1} columnSpacing={2} justifyContent={"center"}>
             <Grid2>
                 <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
-                    <CardActionArea component={RouterLink} to={"/camera/miscellaneous"}>
+                    <CardActionArea component={RouterLink} to={"/camera/misc23"}>
                         <CardMedia
                             component={"img"}
                             height={140}

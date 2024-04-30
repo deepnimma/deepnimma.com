@@ -2,7 +2,11 @@ function nameFactory(place: string, start: number, end: number): string[] {
     let names: string[] = []
 
     for (let i = start; i <= end; i++) {
-        names.push(place + "-" + String(i));
+        if (i < 10) {
+            names.push(place + "-0" + String(i));
+        } else {
+            names.push(place + "-" + String(i));
+        } // if-else
     } // for
 
     return names;
@@ -16,7 +20,7 @@ const copenhagen: string[] = nameFactory("copenhagen", 1, 15);
 const dublin: string[] = nameFactory("dublin", 1, 23);
 const edinburgh: string[] = nameFactory("edinburgh", 26, 49);
 const london: string[] = nameFactory("london", 1, 19);
-const miscellaneous: string[] = nameFactory("miscellaneous", 1, 16);
+const miscellaneous: string[] = nameFactory("misc", 1, 16);
 const reykjavik: string[] = nameFactory("reykjavik", 1, 15);
 const rome: string[] = nameFactory("rome", 1, 16);
 const stockholm: string[] = nameFactory("stockholm", 1, 14);
