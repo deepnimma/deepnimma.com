@@ -1,11 +1,8 @@
 import { Header } from '../elements/header'
 import { Footer } from '../elements/footer'
 import {Box, ImageList, ImageListItem} from "@mui/material";
+import {edinburgh as pic_names} from "../elements/namefactory";
 import React from "react";
-
-let pic_names: string[] = []
-
-for (let i = 26; i <= 48; i++) pic_names.push(String(i))
 
 const Masonry: React.FC = () => {
     return (
