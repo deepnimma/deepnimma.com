@@ -1,7 +1,7 @@
-import { Header } from '../elements/header'
-import { Footer } from '../elements/footer'
+import { Header } from '../../elements/header'
+import { Footer } from '../../elements/footer'
 import {Box, ImageList, ImageListItem} from "@mui/material";
-import {rome as pic_names} from "../elements/namefactory";
+import {miscellaneous as pic_names} from "../../elements/namefactory";
 import React from "react";
 
 const Masonry: React.FC = () => {
@@ -11,7 +11,7 @@ const Masonry: React.FC = () => {
                 {pic_names.map((num) => (
                     <ImageListItem key={num}>
                         <img
-                            src={require(`../../data/portfolio/2023/rome/${num}.jpg`)}
+                            src={require(`../../data/portfolio/2023/miscellaneous/${num}.jpg`)}
                             alt={num}
                             loading={"lazy"}
                             />
@@ -22,7 +22,7 @@ const Masonry: React.FC = () => {
     )
 } // ImageList
 
-const Rome: React.FC = () => {
+const Misc: React.FC = () => {
     return (
         <div>
             <Header />
@@ -32,4 +32,4 @@ const Rome: React.FC = () => {
     )
 }
 
-export default Rome
+export default Misc

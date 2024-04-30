@@ -1,7 +1,7 @@
-import { Header } from '../elements/header'
-import { Footer } from '../elements/footer'
+import { Header } from '../../elements/header'
+import { Footer } from '../../elements/footer'
 import {Box, ImageList, ImageListItem} from "@mui/material";
-import {edinburgh as pic_names} from "../elements/namefactory";
+import {reykjavik as pic_names} from "../../elements/namefactory";
 import React from "react";
 
 const Masonry: React.FC = () => {
@@ -11,7 +11,7 @@ const Masonry: React.FC = () => {
                 {pic_names.map((num) => (
                     <ImageListItem key={num}>
                         <img
-                            src={require(`../../data/portfolio/2023/edinburgh/${num}.jpg`)}
+                            src={require(`../../data/portfolio/2023/reykjavik/${num}.jpg`)}
                             alt={num}
                             loading={"lazy"}
                             />
@@ -22,7 +22,7 @@ const Masonry: React.FC = () => {
     )
 } // ImageList
 
-const Edinburgh: React.FC = () => {
+const Reykjavik: React.FC = () => {
     return (
         <div>
             <Header />
@@ -32,4 +32,4 @@ const Edinburgh: React.FC = () => {
     )
 }
 
-export default Edinburgh
+export default Reykjavik

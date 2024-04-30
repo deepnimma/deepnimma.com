@@ -14,7 +14,7 @@ import Camera from "./sections/pages/camera";
 import Changelog from "./sections/pages/changelog";
 import Planned from "./sections/pages/planned";
 import WebsiteCopyright from "./sections/pages/websiteCopyright";
-import Edinburgh from "./sections/camera/edinburgh";
+import Edinburgh from "./sections/camera/twentythree/edinburgh";
 
 const Home: React.FC = () => {
     return (
