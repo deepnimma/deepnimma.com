@@ -152,6 +152,26 @@ const TwentyThreePics: React.FC = () => {
             </Grid2>
             <Grid2>
                 <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                    <CardActionArea component={RouterLink} to={"/camera/oxford"}>
+                        <CardMedia
+                            component={"img"}
+                            height={140}
+                            image={require("../../data/portfolio/display_images/placeholder.png")}
+                            alt={"dublin picture"}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Oxford
+                            </Typography>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                I miss it :(
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Grid2>
+            <Grid2>
+                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/vatican"}>
                         <CardMedia
                             component={"img"}
@@ -285,6 +305,46 @@ const TwentyThreePics: React.FC = () => {
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnscrift, ui-monospace"}>
                                 I went to Edinburgh
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Grid2>
+            <Grid2>
+                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                    <CardActionArea component={RouterLink} to={"/camera/edinburgh"}>
+                        <CardMedia
+                            component={"img"}
+                            height={140}
+                            image={require("../../data/portfolio/display_images/placeholder.png")}
+                            alt={"edinburgh castle"}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnscrift, ui-monospace"}>
+                                D.C.
+                            </Typography>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnscrift, ui-monospace"}>
+                                We need better monuments.
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Grid2>
+            <Grid2>
+                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                    <CardActionArea component={RouterLink} to={"/camera/edinburgh"}>
+                        <CardMedia
+                            component={"img"}
+                            height={140}
+                            image={require("../../data/portfolio/display_images/placeholder.png")}
+                            alt={"edinburgh castle"}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnscrift, ui-monospace"}>
+                                San Francisco
+                            </Typography>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnscrift, ui-monospace"}>
+                                The Golden Gate bridge is red not golden.
                             </Typography>
                         </CardContent>
                     </CardActionArea>
