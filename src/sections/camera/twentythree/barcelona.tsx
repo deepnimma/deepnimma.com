@@ -11,7 +11,7 @@ const Masonry: React.FC = () => {
             <Grid2 xs display="flex" justifyContent={"center"} alignItems={"center"}>
                 <Typography variant={"h2"} fontStyle="bold" fontFamily={"Bahnschrift, ui-monospace"}>2023</Typography>
             </Grid2>
-            <Grid2>
+            <Grid2 display={"flex"} justifyContent={"center"}>
                 <Box sx={{overflowY: 'scroll'}}>
                     <ImageList variant={"masonry"} cols={3} gap={8}>
                         {pic_names.map((num) => (
