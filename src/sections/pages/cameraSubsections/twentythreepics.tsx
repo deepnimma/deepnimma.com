@@ -146,7 +146,7 @@ export const TwentyThreePics: React.FC = () => {
             </Grid2>
             <Grid2>
                 <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
-                    <CardActionArea component={RouterLink} to={"/camera/oxford"}>
+                    <CardActionArea component={RouterLink} to={"/placeholder"}>
                         <CardMedia
                             component={"img"}
                             height={140}
@@ -330,7 +330,7 @@ export const TwentyThreePics: React.FC = () => {
             </Grid2>
             <Grid2>
                 <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
-                    <CardActionArea component={RouterLink} to={"/camera/charlotte"}>
+                    <CardActionArea component={RouterLink} to={"/placeholder"}>
                         <CardMedia
                             component={"img"}
                             height={140}
@@ -353,7 +353,7 @@ export const TwentyThreePics: React.FC = () => {
             </Grid2>
             <Grid2>
                 <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
-                    <CardActionArea component={RouterLink} to={"/camera/boston"}>
+                    <CardActionArea component={RouterLink} to={"/placeholder"}>
                         <CardMedia
                             component={"img"}
                             height={140}
@@ -376,7 +376,7 @@ export const TwentyThreePics: React.FC = () => {
             </Grid2>
             <Grid2>
                 <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
-                    <CardActionArea component={RouterLink} to={"/camera/dc"}>
+                    <CardActionArea component={RouterLink} to={"/placeholder"}>
                         <CardMedia
                             component={"img"}
                             height={140}
@@ -399,7 +399,7 @@ export const TwentyThreePics: React.FC = () => {
             </Grid2>
             <Grid2>
                 <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
-                    <CardActionArea component={RouterLink} to={"/camera/sanfrancisco23"}>
+                    <CardActionArea component={RouterLink} to={"/placeholder"}>
                         <CardMedia
                             component={"img"}
                             height={140}

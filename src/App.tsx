@@ -14,7 +14,6 @@ import Camera from "./sections/pages/camera";
 import Changelog from "./sections/pages/changelog";
 import Planned from "./sections/pages/planned";
 import WebsiteCopyright from "./sections/pages/websiteCopyright";
-// @ts-ignore
 import Edinburgh from "./sections/camera/twentythree/edinburgh"
 import Dublin from "./sections/camera/twentythree/dublin"
 import Reykjavik from "./sections/camera/twentythree/reykjavik"
@@ -28,6 +27,7 @@ import Belgrade from "./sections/camera/twentythree/belgrade"
 import Budapest from "./sections/camera/twentythree/budapest"
 import Barcelona from "./sections/camera/twentythree/barcelona"
 import Misc from "./sections/camera/twentythree/misc"
+import Placeholder from "./sections/pages/placeholder";
 
 const Home: React.FC = () => {
     return (
@@ -57,6 +57,15 @@ const MyCamera: React.FC = () => {
     );
 };
 
+const MyPlaceholder: React.FC = () => {
+    return (<div>
+        <Header />
+        <Placeholder />
+        <Footer />
+    </div>
+    );
+} // MyPlaceholder
+
 const App: React.FC = () => {
     return (
         <Router>
@@ -68,6 +77,11 @@ const App: React.FC = () => {
                 <Route
                     path={"/camera"}
                     element={<MyCamera />}
+                    caseSensitive={false}
+                    />
+                <Route
+                    path={"/placeholder"}
+                    element={<MyPlaceholder />}
                     caseSensitive={false}
                     />
                 <Route
