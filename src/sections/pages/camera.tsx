@@ -40,8 +40,11 @@ const TwentyThreePics: React.FC = () => {
                             alt={"picture of the washington monument in washington dc"}
                         />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                            <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Misc.
+                            </Typography>
+                            <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Worldwide!
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Other random and uncategorized photos from the year!
@@ -60,8 +63,11 @@ const TwentyThreePics: React.FC = () => {
                             alt={"picture of the recinte modernista de sant pau in barcelona"}
                         />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                            <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Barcelona
+                            </Typography>
+                            <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Spain
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Barca over Real Madrid anyday.
@@ -80,8 +86,11 @@ const TwentyThreePics: React.FC = () => {
                             alt={"picture of the stairway in the magyar nemzeti museum"}
                         />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                            <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Budapest
+                            </Typography>
+                            <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Hungary
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 My first time ever experiencing snow ;)
@@ -100,8 +109,11 @@ const TwentyThreePics: React.FC = () => {
                             alt={"picture of saint sava in front of the temple of saint sava"}
                         />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                            <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Belgrade
+                            </Typography>
+                            <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Serbia
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Absolutely stunned by this city.
@@ -120,8 +132,11 @@ const TwentyThreePics: React.FC = () => {
                             alt={"picture of a park in berlin at night time"}
                         />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                            <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Berlin
+                            </Typography>
+                            <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Germany
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Mein Deutsch ist sehr gut!
@@ -140,8 +155,11 @@ const TwentyThreePics: React.FC = () => {
                             alt={"picture of a close up of the clock on big ben"}
                         />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                            <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 London
+                            </Typography>
+                            <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                United Kingdom
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 I miss a good public transit system.
@@ -160,8 +178,11 @@ const TwentyThreePics: React.FC = () => {
                             alt={"picture of the radcliffe camera"}
                         />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                            <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Oxford
+                            </Typography>
+                            <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                United Kingdom
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 I miss it :(
@@ -180,8 +201,11 @@ const TwentyThreePics: React.FC = () => {
                             alt={"a picture from the inside of saint pietro's basilica in the vatican city"}
                         />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                            <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Vatican
+                            </Typography>
+                            <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Vatican City
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Holy Moly Guacamole!
@@ -200,8 +224,11 @@ const TwentyThreePics: React.FC = () => {
                             alt={"picture of the roman coliseum"}
                         />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                            <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Rome
+                            </Typography>
+                            <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Italy
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 You'd think everyone was over 20ft tall if you ever visited Rome.
@@ -220,8 +247,11 @@ const TwentyThreePics: React.FC = () => {
                             alt={"picture of a street in stockholm"}
                         />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                            <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Stockholm
+                            </Typography>
+                            <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Sweden
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 More like Stork's Home (I did not see a single stork here).
@@ -240,8 +270,11 @@ const TwentyThreePics: React.FC = () => {
                             alt={"picture of a lit up deer in front of the rolex building in copenhagen. taking near christmas time"}
                         />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                            <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Copenhagen
+                            </Typography>
+                            <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Denmark
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Copenhagen more like Copen-haven amirite.
@@ -260,8 +293,11 @@ const TwentyThreePics: React.FC = () => {
                             alt={"picture of a water fall in iceland"}
                         />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                            <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Reykjavik
+                            </Typography>
+                            <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Iceland
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Icy Iceland (It wasn't really that cold tbh)
@@ -280,8 +316,11 @@ const TwentyThreePics: React.FC = () => {
                             alt={"picture of an irish monument on the outskirts of dublin"}
                         />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                            <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Dublin
+                            </Typography>
+                            <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Ireland
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Love me some Ireland!
@@ -300,8 +339,11 @@ const TwentyThreePics: React.FC = () => {
                             alt={"edinburgh castle"}
                             />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                            <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Edinburgh
+                            </Typography>
+                            <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Scotland
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 I went to Edinburgh
@@ -320,8 +362,11 @@ const TwentyThreePics: React.FC = () => {
                             alt={"edinburgh castle"}
                         />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                            <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 D.C.
+                            </Typography>
+                            <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                United States
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 We need better monuments.
@@ -340,8 +385,11 @@ const TwentyThreePics: React.FC = () => {
                             alt={"edinburgh castle"}
                         />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                            <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 San Francisco
+                            </Typography>
+                            <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                United States
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 The Golden Gate bridge is red not golden.
