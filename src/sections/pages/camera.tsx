@@ -37,7 +37,7 @@ const TwentyThreePics: React.FC = () => {
                             component={"img"}
                             height={140}
                             image={require("../../data/portfolio/display_images/miscellaneous.jpg")}
-                            alt={"dublin picture"}
+                            alt={"picture of the washington monument in washington dc"}
                         />
                         <CardContent>
                             <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
@@ -57,7 +57,7 @@ const TwentyThreePics: React.FC = () => {
                             component={"img"}
                             height={140}
                             image={require("../../data/portfolio/display_images/barcelona.jpg")}
-                            alt={"dublin picture"}
+                            alt={"picture of the recinte modernista de sant pau in barcelona"}
                         />
                         <CardContent>
                             <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
@@ -77,7 +77,7 @@ const TwentyThreePics: React.FC = () => {
                             component={"img"}
                             height={140}
                             image={require("../../data/portfolio/display_images/budapest.jpg")}
-                            alt={"dublin picture"}
+                            alt={"picture of the stairway in the magyar nemzeti museum"}
                         />
                         <CardContent>
                             <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
@@ -97,7 +97,7 @@ const TwentyThreePics: React.FC = () => {
                             component={"img"}
                             height={140}
                             image={require("../../data/portfolio/display_images/belgrade.jpg")}
-                            alt={"dublin picture"}
+                            alt={"picture of saint sava in front of the temple of saint sava"}
                         />
                         <CardContent>
                             <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
@@ -117,7 +117,7 @@ const TwentyThreePics: React.FC = () => {
                             component={"img"}
                             height={140}
                             image={require("../../data/portfolio/display_images/berlin.jpg")}
-                            alt={"dublin picture"}
+                            alt={"picture of a park in berlin at night time"}
                         />
                         <CardContent>
                             <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
@@ -137,7 +137,7 @@ const TwentyThreePics: React.FC = () => {
                             component={"img"}
                             height={140}
                             image={require("../../data/portfolio/display_images/london.jpg")}
-                            alt={"dublin picture"}
+                            alt={"picture of a close up of the clock on big ben"}
                         />
                         <CardContent>
                             <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
@@ -157,7 +157,7 @@ const TwentyThreePics: React.FC = () => {
                             component={"img"}
                             height={140}
                             image={require("../../data/portfolio/display_images/placeholder.png")}
-                            alt={"dublin picture"}
+                            alt={"picture of the radcliffe camera"}
                         />
                         <CardContent>
                             <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
@@ -177,7 +177,7 @@ const TwentyThreePics: React.FC = () => {
                             component={"img"}
                             height={140}
                             image={require("../../data/portfolio/display_images/vatican.jpg")}
-                            alt={"dublin picture"}
+                            alt={"a picture from the inside of saint pietro's basilica in the vatican city"}
                         />
                         <CardContent>
                             <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
@@ -197,7 +197,7 @@ const TwentyThreePics: React.FC = () => {
                             component={"img"}
                             height={140}
                             image={require("../../data/portfolio/display_images/rome.jpg")}
-                            alt={"dublin picture"}
+                            alt={"picture of the roman coliseum"}
                         />
                         <CardContent>
                             <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
@@ -217,7 +217,7 @@ const TwentyThreePics: React.FC = () => {
                             component={"img"}
                             height={140}
                             image={require("../../data/portfolio/display_images/stockholm.jpg")}
-                            alt={"dublin picture"}
+                            alt={"picture of a street in stockholm"}
                         />
                         <CardContent>
                             <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
@@ -237,7 +237,7 @@ const TwentyThreePics: React.FC = () => {
                             component={"img"}
                             height={140}
                             image={require("../../data/portfolio/display_images/copenhagen.jpg")}
-                            alt={"dublin picture"}
+                            alt={"picture of a lit up deer in front of the rolex building in copenhagen. taking near christmas time"}
                         />
                         <CardContent>
                             <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
@@ -257,7 +257,7 @@ const TwentyThreePics: React.FC = () => {
                             component={"img"}
                             height={140}
                             image={require("../../data/portfolio/display_images/reykjavik.jpg")}
-                            alt={"dublin picture"}
+                            alt={"picture of a water fall in iceland"}
                         />
                         <CardContent>
                             <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
@@ -277,7 +277,7 @@ const TwentyThreePics: React.FC = () => {
                             component={"img"}
                             height={140}
                             image={require("../../data/portfolio/display_images/dublin.jpg")}
-                            alt={"dublin picture but it's actually edinburgh"}
+                            alt={"picture of an irish monument on the outskirts of dublin"}
                         />
                         <CardContent>
                             <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
@@ -300,10 +300,10 @@ const TwentyThreePics: React.FC = () => {
                             alt={"edinburgh castle"}
                             />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnscrift, ui-monospace"}>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Edinburgh
                             </Typography>
-                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnscrift, ui-monospace"}>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 I went to Edinburgh
                             </Typography>
                         </CardContent>
@@ -320,10 +320,10 @@ const TwentyThreePics: React.FC = () => {
                             alt={"edinburgh castle"}
                         />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnscrift, ui-monospace"}>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 D.C.
                             </Typography>
-                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnscrift, ui-monospace"}>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 We need better monuments.
                             </Typography>
                         </CardContent>
@@ -340,10 +340,10 @@ const TwentyThreePics: React.FC = () => {
                             alt={"edinburgh castle"}
                         />
                         <CardContent>
-                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnscrift, ui-monospace"}>
+                            <Typography gutterBottom variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 San Francisco
                             </Typography>
-                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnscrift, ui-monospace"}>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 The Golden Gate bridge is red not golden.
                             </Typography>
                         </CardContent>
