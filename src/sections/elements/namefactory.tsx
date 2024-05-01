@@ -30,6 +30,11 @@ const washingtondc: string[] = nameFactory("washingtondc", 1, 1); // change late
 const oxford: string[] = nameFactory("oxford", 1, 1); // change later
 const boston: string[] = nameFactory("boston", 1, 1); // change later
 
+console.log(sanfrancisco);
+console.log(washingtondc);
+console.log(oxford);
+console.log(boston);
+
 export {
     barcelona,
     belgrade,
