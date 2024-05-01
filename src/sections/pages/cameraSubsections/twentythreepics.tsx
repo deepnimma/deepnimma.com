@@ -342,7 +342,7 @@ export const TwentyThreePics: React.FC = () => {
                                 Charlotte
                             </Typography>
                             <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
-                                United States
+                                N.C., USA
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Shadow fan page.
@@ -365,7 +365,7 @@ export const TwentyThreePics: React.FC = () => {
                                 Boston
                             </Typography>
                             <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
-                                United States
+                                MA, USA
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 Boston Creme reigns supreme.
@@ -388,7 +388,7 @@ export const TwentyThreePics: React.FC = () => {
                                 D.C.
                             </Typography>
                             <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
-                                United States
+                                UNITED STATES OF AMERICA!!
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 We need better monuments.
@@ -411,7 +411,7 @@ export const TwentyThreePics: React.FC = () => {
                                 San Francisco
                             </Typography>
                             <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
-                                United States
+                                CA, USA
                             </Typography>
                             <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
                                 The Golden Gate bridge is red not golden.

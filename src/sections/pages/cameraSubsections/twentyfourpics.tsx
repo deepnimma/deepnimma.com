@@ -30,5 +30,5 @@ export const TwentyFourPics: React.FC = () => {
                 </Card>
             </Grid2>
         </Grid2>
-    )
+    ) // return
 } // Camera
