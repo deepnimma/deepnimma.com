@@ -312,7 +312,7 @@ const TwentyThreePics: React.FC = () => {
             </Grid2>
             <Grid2>
                 <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
-                    <CardActionArea component={RouterLink} to={"/camera/edinburgh"}>
+                    <CardActionArea component={RouterLink} to={"/camera/dc"}>
                         <CardMedia
                             component={"img"}
                             height={140}
@@ -332,7 +332,7 @@ const TwentyThreePics: React.FC = () => {
             </Grid2>
             <Grid2>
                 <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
-                    <CardActionArea component={RouterLink} to={"/camera/edinburgh"}>
+                    <CardActionArea component={RouterLink} to={"/camera/sanfrancisco23"}>
                         <CardMedia
                             component={"img"}
                             height={140}
