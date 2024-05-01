@@ -354,6 +354,29 @@ const TwentyThreePics: React.FC = () => {
             </Grid2>
             <Grid2>
                 <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                    <CardActionArea component={RouterLink} to={"/camera/sanfrancisco23"}>
+                        <CardMedia
+                            component={"img"}
+                            height={140}
+                            image={require("../../data/portfolio/display_images/placeholder.png")}
+                            alt={"edinburgh castle"}
+                        />
+                        <CardContent>
+                            <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Boston
+                            </Typography>
+                            <Typography variant={"body1"} color={"black"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                United States
+                            </Typography>
+                            <Typography variant={"body2"} color={"text.secondary"} fontFamily={"Bahnschrift, ui-monospace"}>
+                                Boston Creme reigns supreme.
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Grid2>
+            <Grid2>
+                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/dc"}>
                         <CardMedia
                             component={"img"}

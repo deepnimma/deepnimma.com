@@ -28,6 +28,7 @@ const vatican: string[] = nameFactory("vatican", 1, 12);
 const sanfrancisco: string[] = nameFactory("sanfrancisco", 1, 1); // change later
 const washingtondc: string[] = nameFactory("washingtondc", 1, 1); // change later
 const oxford: string[] = nameFactory("oxford", 1, 1); // change later
+const boston: string[] = nameFactory("boston", 1, 1); // change later
 
 export {
     barcelona,
