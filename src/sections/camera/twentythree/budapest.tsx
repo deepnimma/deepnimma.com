@@ -25,9 +25,9 @@ import Grid2 from "@mui/material/Unstable_Grid2";
 
 const Masonry: React.FC = () => {
     return (
-        <Grid2 container rowSpacing={0} columnSpacing={3} columns={1}>
+        <Grid2 container rowSpacing={-4} columnSpacing={3} columns={1}>
             <Grid2 xs display="flex" justifyContent={"center"} alignItems={"center"}>
-                <Typography variant={"h2"} fontStyle="bold" fontFamily={"Bahnschrift, ui-monospace"}>December 6th - December 7th</Typography>
+                <Typography variant={"h4"} fontStyle="bold" fontFamily={"Bahnschrift, ui-monospace"}>December 6th - December 7th</Typography>
             </Grid2>
             <Grid2>
                 <Box sx={{overflowY: 'scroll'}}>
