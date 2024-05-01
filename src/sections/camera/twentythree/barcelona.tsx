@@ -7,24 +7,26 @@ import Grid2 from "@mui/material/Unstable_Grid2";
 
 const Masonry: React.FC = () => {
     return (
-        <Grid2 container rowSpacing={0} columnSpacing={3} columns={1}>
-            <Grid2 xs display="flex" justifyContent={"center"} alignItems={"center"}>
-                <Typography variant={"h2"} fontStyle="bold" fontFamily={"Bahnschrift, ui-monospace"}>2023</Typography>
-            </Grid2>
-            <Grid2 display={"flex"} justifyContent={"center"}>
-                <Box sx={{overflowY: 'scroll'}}>
-                    <ImageList variant={"masonry"} cols={3} gap={8}>
-                        {pic_names.map((num) => (
-                            <ImageListItem key={num}>
-                                <img
-                                    src={require(`../../../data/portfolio/2023/barcelona/${num}.jpg`)}
-                                    alt={num}
-                                    loading={"lazy"}
-                                    />
-                            </ImageListItem>
-                        ))}
-                    </ImageList>
-                </Box>
+        <Grid2 container rowSpacing={-4} columnSpacing={1} columns={1}>
+            <Grid2>
+                <Grid2 xs display="flex" justifyContent={"center"} alignItems={"center"}>
+                    <Typography variant={"h4"} fontStyle="bold" fontFamily={"Bahnschrift, ui-monospace"}>December 7th - December 9th</Typography>
+                </Grid2>
+                <Grid2 display={"flex"} justifyContent={"center"}>
+                    <Box sx={{overflowY: 'scroll'}}>
+                        <ImageList variant={"masonry"} cols={3} gap={8}>
+                            {pic_names.map((num) => (
+                                <ImageListItem key={num}>
+                                    <img
+                                        src={require(`../../../data/portfolio/2023/barcelona/${num}.jpg`)}
+                                        alt={num}
+                                        loading={"lazy"}
+                                        />
+                                </ImageListItem>
+                            ))}
+                        </ImageList>
+                    </Box>
+                </Grid2>
             </Grid2>
         </Grid2>
     )
