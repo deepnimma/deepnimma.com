@@ -11,7 +11,7 @@ const Masonry: React.FC = () => {
         <Grid2 container rowSpacing={-4} columnSpacing={1} columns={1}>
             <Grid2>
                 <Grid2 xs display="flex" justifyContent={"center"} alignItems={"center"}>
-                    <Typography variant={"h4"} fontStyle="bold" fontFamily={"Bahnschrift, ui-monospace"}>December 7th - December 9th</Typography>
+                    <Typography variant={"h4"} fontStyle="bold" fontFamily={"Bahnschrift, ui-monospace"}>January 1st - April 30th</Typography>
                 </Grid2>
                 <Grid2 display={"flex"} justifyContent={"center"}>
                     <Box sx={{overflowY: 'scroll'}}>
