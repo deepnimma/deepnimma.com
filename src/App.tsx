@@ -29,6 +29,9 @@ import Barcelona from "./sections/camera/twentythree/barcelona"
 import Misc from "./sections/camera/twentythree/misc"
 import Placeholder from "./sections/pages/placeholder";
 
+// Spring 24
+import Spring24 from "./sections/camera/twentyfour/bestofspring24"
+
 const Home: React.FC = () => {
     return (
         <div>
@@ -185,6 +188,11 @@ const App: React.FC = () => {
                 <Route
                     path={"/camera/misc23"}
                     element={<Misc />}
+                    caseSensitive={false}
+                />
+                <Route
+                    path={"/camera/spring24"}
+                    element={<Spring24 />}
                     caseSensitive={false}
                 />
             </Routes>

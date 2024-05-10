@@ -8,12 +8,12 @@ export const TwentyFourPics: React.FC = () => {
         <Grid2 container rowSpacing={1} columnSpacing={2} justifyContent={"center"}>
             <Grid2>
                 <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
-                    <CardActionArea component={RouterLink} to={"/placeholder"}>
+                    <CardActionArea component={RouterLink} to={"/camera/spring24"}>
                         <CardMedia
                             component={"img"}
                             height={140}
-                            image={require("../../../data/portfolio/display_images/placeholder.png")}
-                            alt={"picture of the washington monument in washington dc"}
+                            image={require("../../../data/portfolio/display_images/spring24.jpg")}
+                            alt={"Picture of yours truly in front of a sea of stars"}
                         />
                         <CardContent>
                             <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>

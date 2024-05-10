@@ -12,6 +12,7 @@ function nameFactory(place: string, start: number, end: number): string[] {
     return names;
 } // nameFactory
 
+// 2023
 const barcelona: string[] = nameFactory("barcelona", 1, 12);
 const belgrade: string[] = nameFactory("belgrade", 1, 15);
 const berlin: string[] = nameFactory("berlin", 1, 16);
@@ -30,12 +31,16 @@ const washingtondc: string[] = nameFactory("washingtondc", 1, 1); // change late
 const oxford: string[] = nameFactory("oxford", 1, 1); // change later
 const boston: string[] = nameFactory("boston", 1, 1); // change later
 
+// 2024
+const spring24: string[] = nameFactory("spring24", 1, 25);
+
 console.log(sanfrancisco);
 console.log(washingtondc);
 console.log(oxford);
 console.log(boston);
 
 export {
+    // 2023
     barcelona,
     belgrade,
     berlin,
@@ -49,4 +54,6 @@ export {
     rome,
     stockholm,
     vatican,
+    // 2024
+    spring24,
 }
