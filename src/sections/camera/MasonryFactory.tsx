@@ -1,6 +1,5 @@
 import Grid2 from "@mui/material/Unstable_Grid2";
 import {Box, ImageList, ImageListItem, Typography} from "@mui/material";
-import {barcelona as pic_names} from "../elements/namefactory";
 import React from "react";
 
 interface Props {
@@ -23,7 +22,7 @@ const MasonryFactory: React.FC<Props> = ({  image_path, pic_names, date, picture
                             {pic_names.map((num) => (
                                 <ImageListItem key={num}>
                                     <img
-                                        src={require(`${image_path}/${num}.${picture_type}`)}
+                                        src={require(`../../data/portfolio/${image_path}/${num}.${picture_type}`)}
                                         alt={num}
                                         loading={"lazy"}
                                     />
