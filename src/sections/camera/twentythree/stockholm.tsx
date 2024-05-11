@@ -1,9 +1,7 @@
 import { Header } from '../../elements/header'
 import { Footer } from '../../elements/footer'
-import {Box, ImageList, ImageListItem, Typography} from "@mui/material";
 import {stockholm as pic_names} from "../../elements/namefactory";
 import React from "react";
-import Grid2 from "@mui/material/Unstable_Grid2";
 import MasonryFactory from "../MasonryFactory";
 
 const Stockholm: React.FC = () => {
