@@ -11,7 +11,7 @@ const Spring24: React.FC = () => {
             <Header />
             <MasonryFactory
                 date={"January 1st - April 30th"}
-                picture_type={"jpg"}
+                picture_type={"webp"}
                 pic_names={pic_names}
                 image_path={"2024/bestofspring24"}
             />
