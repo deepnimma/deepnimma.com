@@ -26,21 +26,22 @@ const reykjavik: string[] = nameFactory("reykjavik", 1, 15);
 const rome: string[] = nameFactory("rome", 1, 16);
 const stockholm: string[] = nameFactory("stockholm", 1, 13);
 const vatican: string[] = nameFactory("vatican", 1, 12);
-const sanfrancisco: string[] = nameFactory("sanfrancisco", 1, 1); // change later
-const washingtondc: string[] = nameFactory("washingtondc", 1, 1); // change later
-const oxford: string[] = nameFactory("oxford", 1, 1); // change later
-const boston: string[] = nameFactory("boston", 1, 1); // change later
+const charlotte: string[] = nameFactory("charlotte", 1, 5);
+const sanfrancisco: string[] = nameFactory("sanfrancisco", 1, 32); // change later
+const washingtondc: string[] = nameFactory("dc", 1, 12); // change later
+const oxford: string[] = nameFactory("oxford", 1, 48); // change later
+const boston: string[] = nameFactory("boston", 1, 8); // change later
 
 // 2024
 const spring24: string[] = nameFactory("spring24", 1, 25);
 
-console.log(sanfrancisco);
-console.log(washingtondc);
-console.log(oxford);
-console.log(boston);
-
 export {
     // 2023
+    charlotte,
+    sanfrancisco,
+    washingtondc,
+    oxford,
+    boston,
     barcelona,
     belgrade,
     berlin,
