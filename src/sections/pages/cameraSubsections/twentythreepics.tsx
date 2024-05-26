@@ -5,7 +5,7 @@ import {Link as RouterLink} from "react-router-dom";
 
 export const TwentyThreePics: React.FC = () => {
     return (
-        <Grid2 container rowSpacing={1} columnSpacing={2} justifyContent={"center"}>
+        <Grid2 container columns={12} spacing={1} justifyContent={"center"}>
             <Grid2 display={"flex"}>
                 <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/misc23"}>
