@@ -53,7 +53,7 @@ const Copyright: React.FC = () => {
 
 const MyCamera: React.FC = () => {
     return (<div>
-        <Header />
+        <MainPageHeader />
         <Camera />
         <Footer />
     </div>
