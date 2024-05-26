@@ -1,14 +1,6 @@
-.cameraCon {
-    width: 100vw;
-    height: 90.550vh;
-    display: flex;
-    flex-direction: column;
-    background-color: lightgrey;
-    font-family: 'Bahnschrift', ui-monospace;
-}
-
 .gridcon {
     padding-top: 20px;
+    background: antiquewhite;
 }
 
 .cameraConCon {
@@ -16,14 +8,4 @@
     justify-content: center;
     align-items: center;
     offset: auto;
-}
-
-.cameraText {
-    text-transform: capitalize;
-    font-size: 3.776vw;
-    color: black;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }

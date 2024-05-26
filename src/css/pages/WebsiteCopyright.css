@@ -1,6 +1,8 @@
 .copyrightText {
     font-family: Bahnschrift, ui-monospace;
     white-space: pre-wrap;
+    position: relative;
+    justify-items: center;
     align-content: center;
     padding: 10px;
     background-color: black;
