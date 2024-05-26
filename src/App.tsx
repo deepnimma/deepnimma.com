@@ -191,6 +191,32 @@ const App: React.FC = () => {
                     caseSensitive={false}
                 />
                 <Route
+                    path={"/camera/2023/boston"}
+                    element={<Boston />}
+                    caseSensitive={false}
+                    />
+                <Route
+                    path={"/camera/2023/charlotte"}
+                    element={<Charlotte />}
+                    caseSensitive={false}
+                    />
+                <Route
+                    path={"/camera/2023/oxford"}
+                    element={<Oxford />}
+                    caseSensitive={false}
+                    />
+                <Route
+                    path={"/camera/2023/sanfrancisco"}
+                    element={<SanFrancisco />}
+                    caseSensitive={false}
+                    />
+                <Route
+                    path={"/camera/2023/DC"}
+                    element={<DC />}
+                    caseSensitive={false}
+                    />
+                {/*2024*/}
+                <Route
                     path={"/camera/spring24"}
                     element={<Spring24 />}
                     caseSensitive={false}

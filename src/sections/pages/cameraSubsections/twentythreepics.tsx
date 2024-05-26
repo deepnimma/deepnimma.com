@@ -146,11 +146,11 @@ export const TwentyThreePics: React.FC = () => {
             </Grid2>
             <Grid2>
                 <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
-                    <CardActionArea component={RouterLink} to={"/placeholder"}>
+                    <CardActionArea component={RouterLink} to={"/camera/2023/oxford"}>
                         <CardMedia
                             component={"img"}
                             height={140}
-                            image={require("../../../data/portfolio/display_images/placeholder.png")}
+                            image={require("../../../data/portfolio/display_images/oxford.webp")}
                             alt={"picture of the radcliffe camera"}
                         />
                         <CardContent>
@@ -330,12 +330,12 @@ export const TwentyThreePics: React.FC = () => {
             </Grid2>
             <Grid2>
                 <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
-                    <CardActionArea component={RouterLink} to={"/placeholder"}>
+                    <CardActionArea component={RouterLink} to={"/camera/2023/charlotte"}>
                         <CardMedia
                             component={"img"}
                             height={140}
-                            image={require("../../../data/portfolio/display_images/placeholder.png")}
-                            alt={"edinburgh castle"}
+                            image={require("../../../data/portfolio/display_images/charlotte.webp")}
+                            alt={"picture of charlotte downtown"}
                         />
                         <CardContent>
                             <Typography variant={"h5"} component={"div"} fontFamily={"Bahnschrift, ui-monospace"}>
@@ -353,11 +353,11 @@ export const TwentyThreePics: React.FC = () => {
             </Grid2>
             <Grid2>
                 <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
-                    <CardActionArea component={RouterLink} to={"/placeholder"}>
+                    <CardActionArea component={RouterLink} to={"/camera/2023/boston"}>
                         <CardMedia
                             component={"img"}
                             height={140}
-                            image={require("../../../data/portfolio/display_images/placeholder.png")}
+                            image={require("../../../data/portfolio/display_images/boston.webp")}
                             alt={"edinburgh castle"}
                         />
                         <CardContent>
@@ -376,11 +376,11 @@ export const TwentyThreePics: React.FC = () => {
             </Grid2>
             <Grid2>
                 <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
-                    <CardActionArea component={RouterLink} to={"/placeholder"}>
+                    <CardActionArea component={RouterLink} to={"/camera/2023/DC"}>
                         <CardMedia
                             component={"img"}
                             height={140}
-                            image={require("../../../data/portfolio/display_images/placeholder.png")}
+                            image={require("../../../data/portfolio/display_images/dc.webp")}
                             alt={"edinburgh castle"}
                         />
                         <CardContent>
@@ -399,11 +399,11 @@ export const TwentyThreePics: React.FC = () => {
             </Grid2>
             <Grid2>
                 <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
-                    <CardActionArea component={RouterLink} to={"/placeholder"}>
+                    <CardActionArea component={RouterLink} to={"/camera/2023/sanfrancisco"}>
                         <CardMedia
                             component={"img"}
                             height={140}
-                            image={require("../../../data/portfolio/display_images/placeholder.png")}
+                            image={require("../../../data/portfolio/display_images/sanfran.webp")}
                             alt={"edinburgh castle"}
                         />
                         <CardContent>
