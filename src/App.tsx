@@ -131,67 +131,67 @@ const App: React.FC = () => {
                     caseSensitive={false}
                 />
                 <Route
-                    path={"/camera/edinburgh"}
+                    path={"/camera/2023/edinburgh"}
                     element={<Edinburgh />}
                     caseSensitive={false}
                 />
                 <Route
-                    path={"/camera/dublin"}
+                    path={"/camera/2023/dublin"}
                     element={<Dublin />}
                     caseSensitive={false}
                 />
                 <Route
-                    path={"/camera/reykjavik"}
+                    path={"/camera/2023/reykjavik"}
                     element={<Reykjavik />}
                     caseSensitive={false}
                 />
                 <Route
-                    path={"/camera/copenhagen"}
+                    path={"/camera/2023/copenhagen"}
                     element={<Copenhagen />}
                     caseSensitive={false}
                 />
                 <Route
-                    path={"/camera/stockholm"}
+                    path={"/camera/2023/stockholm"}
                     element={<Stockholm />}
                     caseSensitive={false}
                 />
                 <Route
-                    path={"/camera/rome"}
+                    path={"/camera/2023/rome"}
                     element={<Rome />}
                     caseSensitive={false}
                 />
                 <Route
-                    path={"/camera/vatican"}
+                    path={"/camera/2023/vatican"}
                     element={<Vatican />}
                     caseSensitive={false}
                 />
                 <Route
-                    path={"/camera/london"}
+                    path={"/camera/2023/london"}
                     element={<London />}
                     caseSensitive={false}
                 />
                 <Route
-                    path={"/camera/berlin"}
+                    path={"/camera/2023/berlin"}
                     element={<Berlin />}
                     caseSensitive={false}
                 />
                 <Route
-                    path={"/camera/belgrade"}
+                    path={"/camera/2023/belgrade"}
                     element={<Belgrade />}
                     caseSensitive={false}
                 />
                 <Route
-                    path={"/camera/budapest"}
+                    path={"/camera/2023/budapest"}
                     element={<Budapest />}
                     caseSensitive={false}
                 />
                 <Route
-                    path={"/camera/barcelona"}
+                    path={"/camera/2023/barcelona"}
                     element={<Barcelona />}
                     caseSensitive={false}
                 />
                 <Route
-                    path={"/camera/misc23"}
+                    path={"/camera/2023/misc23"}
                     element={<Misc />}
                     caseSensitive={false}
                 />
