@@ -12,7 +12,7 @@ export const TwentyThreePics: React.FC = () => {
                         <CardMedia
                             component={"img"}
                             height={140}
-                            image={require("../../../data/portfolio/display_images/miscellaneous.jpg")}
+                            image={require("../../../data/portfolio/display_images/miscellaneous.webp")}
                             alt={"picture of the washington monument in washington dc"}
                         />
                         <CardContent>

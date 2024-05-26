@@ -27,6 +27,11 @@ import Belgrade from "./sections/camera/twentythree/belgrade"
 import Budapest from "./sections/camera/twentythree/budapest"
 import Barcelona from "./sections/camera/twentythree/barcelona"
 import Misc from "./sections/camera/twentythree/misc"
+import Boston from "./sections/camera/twentythree/boston";
+import Charlotte from "./sections/camera/twentythree/charlotte";
+import DC from "./sections/camera/twentythree/washingtondc"
+import SanFrancisco from "./sections/camera/twentythree/sanfrancisco";
+import Oxford from "./sections/camera/twentythree/oxford";
 import Placeholder from "./sections/pages/placeholder";
 
 // Spring 24
