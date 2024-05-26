@@ -7,6 +7,10 @@
     font-family: 'Bahnschrift', ui-monospace;
 }
 
+.gridcon {
+    padding-top: 20px;
+}
+
 .cameraConCon {
     position: relative;
     justify-content: center;
