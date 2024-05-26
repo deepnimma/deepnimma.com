@@ -10,7 +10,7 @@ const Dublin: React.FC = () => {
             <Header />
             <MasonryFactory
                 date={"October 25th - October 28th"}
-                picture_type={"jpg"}
+                picture_type={"webp"}
                 pic_names={pic_names}
                 image_path={"2023/dublin"}
             />

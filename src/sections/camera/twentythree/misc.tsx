@@ -10,7 +10,7 @@ const Misc: React.FC = () => {
             <Header />
             <MasonryFactory
                 date={"2023"}
-                picture_type={"jpg"}
+                picture_type={"webp"}
                 pic_names={pic_names}
                 image_path={"2023/miscellaneous"}
             />
