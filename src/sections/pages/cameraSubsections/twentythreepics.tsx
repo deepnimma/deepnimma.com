@@ -7,7 +7,7 @@ export const TwentyThreePics: React.FC = () => {
     return (
         <Grid2 container rowSpacing={1} columnSpacing={2} justifyContent={"center"}>
             <Grid2>
-                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/misc23"}>
                         <CardMedia
                             component={"img"}
@@ -30,7 +30,7 @@ export const TwentyThreePics: React.FC = () => {
                 </Card>
             </Grid2>
             <Grid2>
-                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/barcelona"}>
                         <CardMedia
                             component={"img"}
@@ -53,7 +53,7 @@ export const TwentyThreePics: React.FC = () => {
                 </Card>
             </Grid2>
             <Grid2>
-                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/budapest"}>
                         <CardMedia
                             component={"img"}
@@ -76,7 +76,7 @@ export const TwentyThreePics: React.FC = () => {
                 </Card>
             </Grid2>
             <Grid2>
-                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/belgrade"}>
                         <CardMedia
                             component={"img"}
@@ -99,7 +99,7 @@ export const TwentyThreePics: React.FC = () => {
                 </Card>
             </Grid2>
             <Grid2>
-                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/berlin"}>
                         <CardMedia
                             component={"img"}
@@ -122,7 +122,7 @@ export const TwentyThreePics: React.FC = () => {
                 </Card>
             </Grid2>
             <Grid2>
-                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/london"}>
                         <CardMedia
                             component={"img"}
@@ -145,7 +145,7 @@ export const TwentyThreePics: React.FC = () => {
                 </Card>
             </Grid2>
             <Grid2>
-                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/oxford"}>
                         <CardMedia
                             component={"img"}
@@ -168,7 +168,7 @@ export const TwentyThreePics: React.FC = () => {
                 </Card>
             </Grid2>
             <Grid2>
-                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/vatican"}>
                         <CardMedia
                             component={"img"}
@@ -191,7 +191,7 @@ export const TwentyThreePics: React.FC = () => {
                 </Card>
             </Grid2>
             <Grid2>
-                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/rome"}>
                         <CardMedia
                             component={"img"}
@@ -214,7 +214,7 @@ export const TwentyThreePics: React.FC = () => {
                 </Card>
             </Grid2>
             <Grid2>
-                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/stockholm"}>
                         <CardMedia
                             component={"img"}
@@ -237,7 +237,7 @@ export const TwentyThreePics: React.FC = () => {
                 </Card>
             </Grid2>
             <Grid2>
-                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/copenhagen"}>
                         <CardMedia
                             component={"img"}
@@ -260,7 +260,7 @@ export const TwentyThreePics: React.FC = () => {
                 </Card>
             </Grid2>
             <Grid2>
-                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/reykjavik"}>
                         <CardMedia
                             component={"img"}
@@ -283,7 +283,7 @@ export const TwentyThreePics: React.FC = () => {
                 </Card>
             </Grid2>
             <Grid2>
-                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/dublin"}>
                         <CardMedia
                             component={"img"}
@@ -306,7 +306,7 @@ export const TwentyThreePics: React.FC = () => {
                 </Card>
             </Grid2>
             <Grid2>
-                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/edinburgh"}>
                         <CardMedia
                             component={"img"}
@@ -329,7 +329,7 @@ export const TwentyThreePics: React.FC = () => {
                 </Card>
             </Grid2>
             <Grid2>
-                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/charlotte"}>
                         <CardMedia
                             component={"img"}
@@ -352,7 +352,7 @@ export const TwentyThreePics: React.FC = () => {
                 </Card>
             </Grid2>
             <Grid2>
-                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/boston"}>
                         <CardMedia
                             component={"img"}
@@ -375,7 +375,7 @@ export const TwentyThreePics: React.FC = () => {
                 </Card>
             </Grid2>
             <Grid2>
-                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/DC"}>
                         <CardMedia
                             component={"img"}
@@ -398,7 +398,7 @@ export const TwentyThreePics: React.FC = () => {
                 </Card>
             </Grid2>
             <Grid2>
-                <Card sx={{maxWidth: 200, border: 2.5, borderRadius: 2, gap: 2}}>
+                <Card sx={{maxWidth: 175, border: 2.5, borderRadius: 2, gap: 2}}>
                     <CardActionArea component={RouterLink} to={"/camera/2023/sanfrancisco"}>
                         <CardMedia
                             component={"img"}
