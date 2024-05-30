@@ -1,8 +1,8 @@
 import '../../css/pages/Camera.css'
 import React from "react";
 import Grid2 from "@mui/material/Unstable_Grid2";
-import {TwentyThreePics} from "./cameraSubsections/twentythreepics";
-import {TwentyFourPics} from "./cameraSubsections/twentyfourpics";
+import {TwentyThreePics} from "./cameraSubsections/twentyThreePics";
+import {TwentyFourPics} from "./cameraSubsections/twentyFourPics";
 import {TwentyThreeTitle, TwentyFourTitle} from "./cameraSubsections/titles";
 
 const Camera: React.FC = () => {

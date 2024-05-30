@@ -1,10 +1,10 @@
-import {MainPageHeader} from "../home/mainpageheader";
+import {MainPageHeader} from "../home/mainPageHeader";
 import {Footer} from "../elements/footer";
 import Camera from "../pages/camera";
 import {Header} from "../elements/header";
 import {Placeholder} from "../pages/placeholder";
 import Investigates from "../pages/investigates";
-import {MainPageFooter} from "../home/mainpagefooter";
+import {MainPageFooter} from "../home/mainPageFooter";
 import {Route, Routes} from "react-router-dom";
 
 const MyCamera: React.FC = () => {

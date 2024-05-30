@@ -2,7 +2,7 @@ import { Header } from '../../elements/header'
 import { Footer } from '../../elements/footer'
 
 import React from "react";
-import {spring24 as pic_names} from "../../elements/namefactory";
+import {spring24 as pic_names} from "../../elements/nameFactory";
 import MasonryFactory from "../MasonryFactory";
 
 const Spring24: React.FC = () => {
