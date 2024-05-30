@@ -7,8 +7,8 @@ const linkTexts: string[] = [
 ]
 
 const ends: string[] = [
-    "/changelog",
-    "/planned",
+    "/placeholder", // <- change to /changelog when implemented
+    "/placeholder", // <- change to /planned when implemented
     "/copyright",
 ]
 
