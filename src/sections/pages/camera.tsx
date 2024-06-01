@@ -1,8 +1,8 @@
 import '../../css/pages/Camera.css'
 import React from "react";
 import Grid2 from "@mui/material/Unstable_Grid2";
-import {TwentyThreePics} from "./cameraSubsections/twentyThreePics";
-import {TwentyFourPics} from "./cameraSubsections/twentyFourPics";
+import {TwentyThreePictureCards} from "./cameraSubsections/twentyThreePictureCards";
+import {TwentyFourPictureCards} from "./cameraSubsections/twentyFourPictureCards";
 import {TwentyThreeTitle, TwentyFourTitle} from "./cameraSubsections/titles";
 
 const Camera: React.FC = () => {
@@ -14,7 +14,7 @@ const Camera: React.FC = () => {
                         <TwentyFourTitle />
                     </Grid2>
                     <Grid2 xs display={"flex"} justifyContent={"center"}>
-                        <TwentyFourPics />
+                        <TwentyFourPictureCards />
                     </Grid2>
                 </Grid2>
                 <Grid2>
@@ -22,7 +22,7 @@ const Camera: React.FC = () => {
                         <TwentyThreeTitle />
                     </Grid2>
                     <Grid2 xs display={"flex"} justifyContent={"center"}>
-                        <TwentyThreePics />
+                        <TwentyThreePictureCards />
                     </Grid2>
                 </Grid2>
             </Grid2>

@@ -9,8 +9,8 @@ import {
 } from "react-router-dom"
 
 // Spring 24
-import {TwentyThreeRoutes} from "./sections/routes/twentyThreeRoutes";
-import {TwentyFourRoutes} from "./sections/routes/twentyFourRoutes";
+import {TwentyThreePicturesRoutes} from "./sections/routes/twentyThreePicturesRoutes";
+import {TwentyFourRoutes} from "./sections/routes/twentyFourPicturesRoutes";
 import {FooterRoutes} from "./sections/routes/footerRoutes";
 import { HeaderRoutes } from './sections/routes/headerRoutes';
 
@@ -35,7 +35,7 @@ const App: React.FC = () => {
             </Routes>
             <HeaderRoutes />
             <FooterRoutes />
-            <TwentyThreeRoutes />
+            <TwentyThreePicturesRoutes />
             <TwentyFourRoutes />
         </Router>
     ) // return

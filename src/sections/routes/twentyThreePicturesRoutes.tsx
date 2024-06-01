@@ -19,7 +19,7 @@ import Oxford from "../camera/twentythree/oxford";
 import SanFrancisco from "../camera/twentythree/sanfrancisco";
 import DC from "../camera/twentythree/washingtondc";
 
-export const TwentyThreeRoutes: React.FC = () => {
+export const TwentyThreePicturesRoutes: React.FC = () => {
     return (
         <Routes>
             <Route

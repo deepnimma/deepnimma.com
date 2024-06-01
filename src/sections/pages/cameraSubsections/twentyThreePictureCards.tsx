@@ -3,7 +3,7 @@ import Grid2 from "@mui/material/Unstable_Grid2";
 import {Card, CardActionArea, CardContent, CardMedia, Typography} from "@mui/material";
 import {Link as RouterLink} from "react-router-dom";
 
-export const TwentyThreePics: React.FC = () => {
+export const TwentyThreePictureCards: React.FC = () => {
     return (
         <Grid2 container columns={12} spacing={1} justifyContent={"center"}>
             <Grid2 display={"flex"}>
