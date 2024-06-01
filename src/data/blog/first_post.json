@@ -1,6 +1,6 @@
 {
   "title": "My first post on this website",
-  "title_description": "This is the first post on my website. This post is used to test the blogging functionality",
+  "description": "This is the first post on my website. This post is used to test the blogging functionality",
   "date": "31st May, 2024",
   "body": [
     "This is the first paragraph.",
