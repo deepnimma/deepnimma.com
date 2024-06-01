@@ -1,0 +1,22 @@
+{
+  "title": "My first post on this website",
+  "title_description": "This is the first post on my website. This post is used to test the blogging functionality",
+  "date": "31st May, 2024",
+  "body": [
+    "This is the first paragraph.",
+    "This is the second paragraph.",
+    "This is the third paragraph"
+  ],
+  "picture_folder": "first_post",
+  "pictures": [
+    "JPG_TEST.jpg",
+    "PNG_TEST.png",
+    "WEBP_TEST.webp"
+  ],
+  "picture_locations": [
+    0,
+    2,
+    3
+  ],
+  "references": []
+}
