@@ -1,6 +1,7 @@
 import '../../css/pages/WebsiteCopyright.css'
 import React from "react";
-import {Typography} from "@mui/material";
+import { createTheme, ThemeProvider, responsiveFontSizes } from "@mui/material/styles"
+import {Stack, Typography} from "@mui/material";
 
 const license = "" +
     "Mozilla Public License Version 2.0\n" +
@@ -379,11 +380,17 @@ const license = "" +
 
 // I didn't want to bother dealing with reading a file lol
 
+let theme = createTheme()
+theme = responsiveFontSizes(theme);
 
 const WebsiteCopyright: React.FC = () => {
     return (
         <div className={"copyrightCon"}>
-            <Typography className="copyrightText" fontFamily={"Bahnschrift, ui-monospace"}>{license}</Typography>
+            <ThemeProvider theme={theme}>
+                <Stack sx={{ alignItems: "center", backgroundColor: "black" }}>
+                    <Typography className="copyrightText" variant={"body2"} fontFamily={"Bahnschrift"} color={"white"} whiteSpace={"pre-wrap"}>{license}</Typography>
+                </Stack>
+            </ThemeProvider>
         </div>
     ) // return
 } // WebsiteCopyright
