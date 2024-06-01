@@ -1,7 +1,7 @@
 import {Header} from "../../elements/header";
 import {Footer} from "../../elements/footer";
-import MasonryFactory from "../masonryFactory";
-import {washingtondc as pic_names} from "../../elements/nameFactory";
+import MasonryFactory from "../../../util/masonryFactory";
+import {washingtondc as pic_names} from "../../../util/nameFactory";
 import React from "react";
 
 

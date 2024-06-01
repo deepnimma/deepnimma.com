@@ -2,7 +2,7 @@ import '../../css/pages/Investigates.css'
 import React from "react";
 
 import {default as first_post} from "./../../data/blog/first_post.json"
-import BlogCardFactory from "./blogSubsections/blogFactory";
+import BlogCardFactory from "../../util/blogFactory";
 import {Stack} from "@mui/material";
 
 const Investigates: React.FC = () => {

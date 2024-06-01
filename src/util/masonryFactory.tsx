@@ -22,7 +22,7 @@ const MasonryFactory: React.FC<Props> = ({  image_path, pic_names, date, picture
                             {pic_names.map((num) => (
                                 <ImageListItem key={num}>
                                     <img
-                                        src={require(`../../data/portfolio/${image_path}/${num}.${picture_type}`)}
+                                        src={require(`../data/portfolio/${image_path}/${num}.${picture_type}`)}
                                         alt={num}
                                         loading={"lazy"}
                                     />

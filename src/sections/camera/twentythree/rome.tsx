@@ -1,8 +1,8 @@
 import { Header } from '../../elements/header'
 import { Footer } from '../../elements/footer'
-import {rome as pic_names} from "../../elements/nameFactory";
+import {rome as pic_names} from "../../../util/nameFactory";
 import React from "react";
-import MasonryFactory from "../masonryFactory";
+import MasonryFactory from "../../../util/masonryFactory";
 
 const Rome: React.FC = () => {
     return (

@@ -1,8 +1,8 @@
 import { Header } from '../../elements/header'
 import { Footer } from '../../elements/footer'
-import {reykjavik as pic_names} from "../../elements/nameFactory";
+import {reykjavik as pic_names} from "../../../util/nameFactory";
 import React from "react";
-import MasonryFactory from "../masonryFactory";
+import MasonryFactory from "../../../util/masonryFactory";
 
 const Reykjavik: React.FC = () => {
     return (

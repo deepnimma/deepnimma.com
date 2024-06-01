@@ -1,8 +1,8 @@
 import { Header } from '../../elements/header'
 import { Footer } from '../../elements/footer'
-import {miscellaneous as pic_names} from "../../elements/nameFactory";
+import {miscellaneous as pic_names} from "../../../util/nameFactory";
 import React from "react";
-import MasonryFactory from "../masonryFactory";
+import MasonryFactory from "../../../util/masonryFactory";
 
 const Misc: React.FC = () => {
     return (
