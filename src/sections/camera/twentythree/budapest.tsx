@@ -2,7 +2,7 @@ import { Header } from '../../elements/header'
 import { Footer } from '../../elements/footer'
 import {budapest as pic_names} from "../../elements/nameFactory";
 import React from "react";
-import MasonryFactory from "../MasonryFactory";
+import MasonryFactory from "../masonryFactory";
 
 const Budapest: React.FC = () => {
     return (
