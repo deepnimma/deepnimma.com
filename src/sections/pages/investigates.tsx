@@ -7,16 +7,18 @@ import {Stack} from "@mui/material";
 
 const Investigates: React.FC = () => {
     return (
-        <Stack spacing={2} alignItems={"center"} padding={"20px"}>
+        <Stack spacing={2} alignItems={"center"} padding={"20px"} sx={{ backgroundColor: "darkred" }}>
             <BlogCardFactory
                 title={"MY Name is Deepesh Nimma"}
                 description={"And this is my blog"}
                 date={"June 1st, 2024"}
+                endpoint={"/placeholder"}
                 />
             <BlogCardFactory
                 title={first_post.title}
                 description={first_post.description}
                 date={first_post.date}
+                endpoint={"/placeholder"}
             />
         </Stack>
     ) // return
