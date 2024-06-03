@@ -1,4 +1,5 @@
 import json
+import logging
 import typing
 
 
@@ -9,9 +10,31 @@ def read_post_data(filename: str) -> dict:
     :param filename: the file name to read the data from
     :return: the data in the json file as a dictionary
     """
-    with open(f"./../{filename}.json", "r") as file:
+    with open(f"../{filename}.json", "r") as file:
         return json.load(file)
 
+
+def add_field(org_data: list[dict], key: str, value: typing.Any) -> list[dict]:
+    logging.debug(f"Adding {key} with value: {value}")
+    org_data.append(
+        dict(
+            [
+                (
+                    key,
+                    value
+                )
+            ]
+        )
+    )
+
+    return org_data
+
+def add_all(org_data: list[dict], key: str, vals: list[typing.Any]) -> list[dict]:
+    logging.debug(f"Adding all of {vals} with key: {key}")
+    for val in vals:
+        add_field(org_data, key, val)
+
+    return org_data
 
 def organize_data(postData: dict) -> list[dict]:
     """
@@ -27,22 +50,57 @@ def organize_data(postData: dict) -> list[dict]:
     Para 3
     Para 4
     etc
-    etc
-    etc
 
     References
 
     :param postData: the data of the post to be organized.
     :return: data of the post in an organized dict. We will then pass this dict to a generator to create the react tags.
     """
-    post_data = list()
+    org_post_data = list()
+
+    # First add the heading
+    add_field(org_post_data, "title", postData["title"])
+
+    # Next add the date
+    add_field(org_post_data, "date", postData["date"])
+
+    pic_loc_stack: list[int] = list(postData["picture_locations"])
+    pics: list[str] = list(postData["pictures"])
+    paragraphs: list[str] = list(postData["body"])
+    i: int = 0
+    tot: int = len(pics) + len(paragraphs)
+
+    while i < tot:
+        # If all pictures have been added, add all paragraphs
+        if len(pics) == 0:
+            add_all(org_post_data, "paragraph", paragraphs)
+            break
+        elif len(paragraphs) == 0:
+            add_all(org_post_data, "picture", pics)
+            break
+
+        if i == pic_loc_stack[0]:
+            add_field(org_post_data, "picture", pics.pop(0))
+            pic_loc_stack.pop(0)
+        else:
+            add_field(org_post_data, "paragraph", paragraphs.pop(0))
+
+        i += 1
+
+    # Append References
+    add_all(org_post_data, "reference", postData["references"])
+
+    return org_post_data
 
 
 if __name__ == "__main__":
     print("Hello, World!")
 
     # Only Change These Variables
-    jsonFilename: str = ""
+    jsonFilename: str = "first_post"  # omit the .json
 
     # Do not change anything below this
     data = read_post_data(jsonFilename)
+    org_data = organize_data(data)
+
+    print(org_data)
