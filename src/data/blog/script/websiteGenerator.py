@@ -1,11 +1,14 @@
 import json
-import logging
+import os
 import typing
 
 
 def _create_title(data: list[dict]) -> str:
     title: str = data.pop(0)["title"]
     date: str = data.pop(0)["date"]
+
+    print(f"Creating Title String: Title -> {title}, Date -> {date}")
+
     return (r'<Box sx={{ flexGrow: 1 }}>' + "\n" +
             r'<Typography variant="h3" color="black" fontFamily="inherit">' + "\n" +
             f'{title}\n' +
@@ -21,36 +24,77 @@ def _create_title(data: list[dict]) -> str:
 
 
 def _create_paragraph(paragraph: str) -> str:
+    print(f'Creating para -> {paragraph}')
+
     return (
-        r'<Box sx={{width: "50%"}}>' + "\n" +
-        r'<Typography variant="body1" fontFamily="inherit">' + "\n" +
-        f"{paragraph}" + "\n" +
-        r'</Typography>' + "\n" +
-        r'</Box>' + "\n"
+            r'<Box sx={{width: "50%"}}>' + "\n" +
+            r'<Typography variant="body1" fontFamily="inherit">' + "\n" +
+            f"{paragraph}" + "\n" +
+            r'</Typography>' + "\n" +
+            r'</Box>' + "\n"
     )
 
 
-def _create_pictures(folder_name: str, pic: str) -> str:
+def _create_picture(folder_name: str, pic: str) -> str:
+    print(f'Creating picture -> {folder_name}/{pic}')
+
     return (
-        r'<Box>' + "\n" +
-        r'<img' + "\n" +
-        r'src={require("../../data/blog/pictures/' + folder_name + r'/' + pic + r'")}' + "\n" +
-        r'loading={"lazy"}' + "\n" +
-        r'/>' + "\n" +
+            r'<Box>' + "\n" +
+            r'<img' + "\n" +
+            r'src={require("../../data/blog/pictures/' + folder_name + r'/' + pic + r'")}' + "\n" +
+            r'loading={"lazy"}' + "\n" +
+            r'/>' + "\n" +
+            r'</Box>' + "\n"
+    )
+
+
+def _create_reference(reference: str) -> str:
+    print(f'Creating Reference -> {reference}')
+
+    return (
+            r'<Typography variant="body2" fontFamily="inherit">' + "\n"
+                                                                   f'{reference}\n' +
+            r'</Typography>' + "\n"
+    )
+
+
+def generate_body(post_name: str, data: list[dict[str, str]]) -> tuple[list[str], list[str]]:
+    print(f'Generating Body -> {post_name}')
+
+    body = list()
+
+    for item in data:
+        if "reference" in item:
+            break
+
+        if "picture" in item:
+            body.append(_create_picture(post_name, item["picture"]))
+        else:
+            body.append(_create_paragraph(item["paragraph"]))
+
+    references = list()
+
+    for item in data:
+        if "reference" in item:
+            references.append(_create_reference(item["reference"]))
+
+    return body, references
+
+
+def _create_reference_body(ref_list: list[str]) -> str:
+    base_str: str = (
+            r'<Box>' + "\n" +
+            r'<Typography variant="h5" fontFamily="inherit">References</Typography>' + "\n"
+    )
+
+    for ref in ref_list:
+        base_str += ref
+
+    base_str += (
         r'</Box>'
     )
 
-
-def _create_references(refs: list[str]) -> list[str]:
-    return list()
-
-
-def generate_page_file(title: str) -> None:
-    return
-
-
-def generate_route_file(titles: list[str]) -> None:
-    return
+    return base_str
 
 
 def read_post_data(filename: str) -> dict:
@@ -65,7 +109,7 @@ def read_post_data(filename: str) -> dict:
 
 
 def add_field(org_data: list[dict], key: str, value: typing.Any) -> list[dict]:
-    logging.debug(f"Adding {key} with value: {value}")
+    print(f"Adding {key} with value: {value}")
     org_data.append(
         dict(
             [
@@ -81,7 +125,7 @@ def add_field(org_data: list[dict], key: str, value: typing.Any) -> list[dict]:
 
 
 def add_all(org_data: list[dict], key: str, vals: list[typing.Any]) -> list[dict]:
-    logging.debug(f"Adding all of {vals} with key: {key}")
+    print(f"Adding all of {vals} with key: {key}")
     for val in vals:
         add_field(org_data, key, val)
 
@@ -145,17 +189,62 @@ def organize_data(postData: dict) -> list[dict]:
     return org_post_data
 
 
+def generate_full_page(class_name: str, title: str, pp_list: list[str], refs: str) -> str:
+    imports: str = (
+        r'import {Box, Stack, Typography} from "@mui/material"'
+    )
+
+    base: str = imports + "\n" + (
+            r'export const ' + class_name + r': React.FC = () => {' + "\n" +
+            r'return (' + "\n" +
+            r'<Stack gap={4} sx={{' + "\n" +
+            r'alignItems: "center",' + "\n" +
+            r'padding: "20px",' + "\n" +
+            r'fontFamily: "Bahnschrift",' + "\n" +
+            r'}}>' + "\n"
+    )
+
+    base += title
+
+    for item in pp_list:
+        base += item
+
+    base += refs
+
+    base += (
+            "\n" +
+            r'</Stack>' + "\n" +
+            r')}'
+    )
+
+    return base
+
+
 if __name__ == "__main__":
     print("Hello, World!")
 
     # Only Change These Variables
     jsonFilename: str = "first_post"  # omit the .json
+    subfolder: str | None = None  # str | None
+    class_name: str = "FirstPost"  # Name of the javascript class
 
     # Do not change anything below this
     data = read_post_data(jsonFilename)
     org_data = organize_data(data)
 
-    print(org_data)
-    print(_create_title(org_data))
-    print(_create_pictures("first_post", "TEST_JPG.jpg"))
-    print(org_data)
+    title_str: str = _create_title(org_data)
+    pp_list, reference_list = generate_body(jsonFilename, org_data)
+    reference_str_list = _create_reference_body(reference_list)
+
+    base: str = generate_full_page(class_name, title_str, pp_list, reference_str_list)
+
+    if subfolder is not None:
+        if not os.path.exists(f'./../../../sections/blog/{subfolder}'):
+            os.mkdir(f'./../../../sections/blog/{subfolder}')
+        with open(f'./../../../sections/blog/{subfolder}/{jsonFilename}.tsx', 'w+') as file:
+            file.write(base)
+    else:
+        with open(f'./../../../sections/blog/{jsonFilename}.tsx', 'w+') as file:
+            file.write(base)
+
+    print("Done.")
