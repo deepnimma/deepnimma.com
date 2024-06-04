@@ -87,7 +87,7 @@
     font-size: 2vh;
 }
 
-.Investigates {
+.Blog {
     background: black;
     border-style: hidden;
     border-color: white;
@@ -114,7 +114,7 @@
     text-decoration-thickness: from-font;
 }
 
-.Investigates:hover {
+.Blog:hover {
     /*//text-decoration: underline;*/
     text-decoration: underline;
     text-decoration-thickness: from-font;
