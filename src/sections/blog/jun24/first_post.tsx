@@ -35,18 +35,21 @@ Anyways, enjoy these cute cats.
 <Box>
 <img
 src={require("../../../data/blog/pictures/first_post/TEST_JPG.jpg")}
+alt={"cat 1"}
 loading={"lazy"}
 />
 </Box>
 <Box>
 <img
 src={require("../../../data/blog/pictures/first_post/PNG_TEST.png")}
+alt={"cat 2"}
 loading={"lazy"}
 />
 </Box>
 <Box>
 <img
 src={require("../../../data/blog/pictures/first_post/WEBP_TEST.webp")}
+alt={"cat but in webp"}
 loading={"lazy"}
 />
 </Box>

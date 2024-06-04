@@ -35,14 +35,16 @@ def _create_paragraph(paragraph: str) -> str:
     )
 
 
-def _create_picture(folder_name: str, pic: str, subfolder: str | None) -> str:
+def _create_picture(folder_name: str, pic: tuple[str, str], subfolder: str | None) -> str:
     print(f'Creating picture -> {folder_name}/{pic}')
+    name, alt = pic
 
     if subfolder is None:
         return (
                 r'<Box>' + "\n" +
                 r'<img' + "\n" +
-                r'src={require("../../data/blog/pictures/' + folder_name + r'/' + pic + r'")}' + "\n" +
+                r'src={require("../../data/blog/pictures/' + folder_name + r'/' + name + r'")}' + "\n" +
+                r'alt={"' + alt + '"}' + "\n" +
                 r'loading={"lazy"}' + "\n" +
                 r'/>' + "\n" +
                 r'</Box>' + "\n"
@@ -51,7 +53,8 @@ def _create_picture(folder_name: str, pic: str, subfolder: str | None) -> str:
         return (
                 r'<Box>' + "\n" +
                 r'<img' + "\n" +
-                r'src={require("../../../data/blog/pictures/' + folder_name + r'/' + pic + r'")}' + "\n" +
+                r'src={require("../../../data/blog/pictures/' + folder_name + r'/' + name + r'")}' + "\n" +
+                r'alt={"' + alt + '"}' + "\n" +
                 r'loading={"lazy"}' + "\n" +
                 r'/>' + "\n" +
                 r'</Box>' + "\n"
@@ -142,6 +145,14 @@ def add_all(org_data: list[dict], key: str, vals: list[typing.Any]) -> list[dict
     return org_data
 
 
+def add_all_pics(org_data: list[dict], key: str, pics: list[str], alt_texts: list[str]) -> list[dict]:
+    for i in range(len(pics)):
+        temp = (pics[i], alt_texts[i])
+        add_field(org_data, key, temp)
+
+    return org_data
+
+
 def organize_data(postData: dict) -> list[dict]:
     """
     Here's how we are going to organize the data.
@@ -172,6 +183,7 @@ def organize_data(postData: dict) -> list[dict]:
 
     pic_loc_stack: list[int] = list(postData["picture_locations"])
     pics: list[str] = list(postData["pictures"])
+    alt_texts: list[str] = list(postData["alt_texts"])
     paragraphs: list[str] = list(postData["body"])
     i: int = 0
     tot: int = len(pics) + len(paragraphs)
@@ -182,11 +194,12 @@ def organize_data(postData: dict) -> list[dict]:
             add_all(org_post_data, "paragraph", paragraphs)
             break
         elif len(paragraphs) == 0:
-            add_all(org_post_data, "picture", pics)
+            add_all_pics(org_post_data, "picture", pics, alt_texts)
             break
 
         if i == pic_loc_stack[0]:
-            add_field(org_post_data, "picture", pics.pop(0))
+            temp = (pics.pop(0), alt_texts.pop(0))
+            add_field(org_post_data, "picture", temp)
             pic_loc_stack.pop(0)
         else:
             add_field(org_post_data, "paragraph", paragraphs.pop(0))

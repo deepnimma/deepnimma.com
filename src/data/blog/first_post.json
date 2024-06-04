@@ -13,6 +13,11 @@
     "PNG_TEST.png",
     "WEBP_TEST.webp"
   ],
+  "alt_texts": [
+    "cat 1",
+    "cat 2",
+    "cat but in webp"
+  ],
   "picture_locations": [
     3,
     4,
