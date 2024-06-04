@@ -3,6 +3,32 @@ import logging
 import typing
 
 
+def _create_title(title: str) -> str:
+    return ""
+
+
+def _create_date(date: str) -> str:
+    return ""
+
+
+def _create_paragraph(pic: str) -> str:
+    return ""
+
+
+def _create_pictures(pic: str) -> str:
+    return ""
+
+
+def _create_references(refs: list[str]) -> list[str]:
+    return list()
+
+def generate_page_file(title: str) -> None:
+    return
+
+def generate_route_file(titles: list[str]) -> None:
+    return
+
+
 def read_post_data(filename: str) -> dict:
     """
     Reads the data from the json file and returns a json object. The json object contains all the information
@@ -29,12 +55,14 @@ def add_field(org_data: list[dict], key: str, value: typing.Any) -> list[dict]:
 
     return org_data
 
+
 def add_all(org_data: list[dict], key: str, vals: list[typing.Any]) -> list[dict]:
     logging.debug(f"Adding all of {vals} with key: {key}")
     for val in vals:
         add_field(org_data, key, val)
 
     return org_data
+
 
 def organize_data(postData: dict) -> list[dict]:
     """
@@ -104,3 +132,12 @@ if __name__ == "__main__":
     org_data = organize_data(data)
 
     print(org_data)
+
+    # After everything is done, add filename to index
+    with open("index.json", "r") as file:
+        data = json.read(file)
+
+    data["files"].append(jsonFilename)
+
+    with open("index.json", "w") as file:
+        json.dump(data, file, indent=4)

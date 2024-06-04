@@ -5,7 +5,10 @@
   "body": [
     "This is the first paragraph.",
     "This is the second paragraph.",
-    "This is the third paragraph"
+    "This is the third paragraph",
+    "This is the fourth paragraph",
+    "5",
+    "6"
   ],
   "picture_folder": "first_post",
   "pictures": [
@@ -16,7 +19,7 @@
   "picture_locations": [
     0,
     2,
-    3
+    5
   ],
   "references": []
 }

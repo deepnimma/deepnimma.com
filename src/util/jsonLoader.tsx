@@ -1,5 +1,5 @@
 // import fs from 'fs'
-import * as index from "./../data/blog/index.json"
+import * as index from "../data/blog/script/index.json"
 
 interface Posts {
     title: string,
