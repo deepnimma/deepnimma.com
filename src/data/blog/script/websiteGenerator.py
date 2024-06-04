@@ -3,27 +3,51 @@ import logging
 import typing
 
 
-def _create_title(title: str) -> str:
-    return ""
+def _create_title(data: list[dict]) -> str:
+    title: str = data.pop(0)["title"]
+    date: str = data.pop(0)["date"]
+    return (r'<Box sx={{ flexGrow: 1 }}>' + "\n" +
+            r'<Typography variant="h3" color="black" fontFamily="inherit">' + "\n" +
+            f'{title}\n' +
+            r'</Typography>' + "\n" +
+            r'<Typography variant="h5" color="text.secondary" fontFamily="inherit">' + "\n" +
+            f'{date}' + "\n" +
+            r'</Typography>' + "\n" +
+            r'<Typography variant="body1" color="text.secondary" fontFamily="inherit">' + "\n" +
+            r'By Deepesh Nimma' + "\n" +
+            r'</Typography>' + "\n" +
+            r'</Box>' + "\n"
+            )
 
 
-def _create_date(date: str) -> str:
-    return ""
+def _create_paragraph(paragraph: str) -> str:
+    return (
+        r'<Box sx={{width: "50%"}}>' + "\n" +
+        r'<Typography variant="body1" fontFamily="inherit">' + "\n" +
+        f"{paragraph}" + "\n" +
+        r'</Typography>' + "\n" +
+        r'</Box>' + "\n"
+    )
 
 
-def _create_paragraph(pic: str) -> str:
-    return ""
-
-
-def _create_pictures(pic: str) -> str:
-    return ""
+def _create_pictures(folder_name: str, pic: str) -> str:
+    return (
+        r'<Box>' + "\n" +
+        r'<img' + "\n" +
+        r'src={require("../../data/blog/pictures/' + folder_name + r'/' + pic + r'")}' + "\n" +
+        r'loading={"lazy"}' + "\n" +
+        r'/>' + "\n" +
+        r'</Box>'
+    )
 
 
 def _create_references(refs: list[str]) -> list[str]:
     return list()
 
+
 def generate_page_file(title: str) -> None:
     return
+
 
 def generate_route_file(titles: list[str]) -> None:
     return
@@ -132,12 +156,6 @@ if __name__ == "__main__":
     org_data = organize_data(data)
 
     print(org_data)
-
-    # After everything is done, add filename to index
-    with open("index.json", "r") as file:
-        data = json.read(file)
-
-    data["files"].append(jsonFilename)
-
-    with open("index.json", "w") as file:
-        json.dump(data, file, indent=4)
+    print(_create_title(org_data))
+    print(_create_pictures("first_post", "TEST_JPG.jpg"))
+    print(org_data)

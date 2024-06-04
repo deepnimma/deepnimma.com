@@ -13,6 +13,7 @@ import {TwentyThreePicturesRoutes} from "./sections/routes/twentyThreePicturesRo
 import {TwentyFourRoutes} from "./sections/routes/twentyFourPicturesRoutes";
 import {FooterRoutes} from "./sections/routes/footerRoutes";
 import { HeaderRoutes } from './sections/routes/headerRoutes';
+import {BlogRoutes} from "./sections/routes/blogRoutes";
 
 const Home: React.FC = () => {
     return (
@@ -37,6 +38,7 @@ const App: React.FC = () => {
             <FooterRoutes />
             <TwentyThreePicturesRoutes />
             <TwentyFourRoutes />
+            <BlogRoutes />
         </Router>
     ) // return
 } // App
