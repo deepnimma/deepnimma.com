@@ -1,7 +1,5 @@
 import React from "react";
 import Grid2 from "@mui/material/Unstable_Grid2";
-import {Card, CardActionArea, CardContent, CardMedia, Typography} from "@mui/material";
-import {Link as RouterLink} from "react-router-dom";
 import PictureCardFactory from "../../../util/pictureCardFactory";
 
 export const TwentyFourPictureCards: React.FC = () => {

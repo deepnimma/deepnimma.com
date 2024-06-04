@@ -1,4 +1,4 @@
-import {Card, CardActionArea, CardContent, CardMedia, Typography} from "@mui/material";
+import {Card, CardActionArea, CardContent, Typography} from "@mui/material";
 import {Link as RouterLink} from "react-router-dom";
 
 interface BlogCardProps {
