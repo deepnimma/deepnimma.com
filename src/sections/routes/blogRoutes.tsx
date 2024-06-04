@@ -17,7 +17,7 @@ export const BlogRoutes: React.FC = () => {
     return (
         <Routes>
             <Route
-                path={"/blog/first_post"}
+                path={"/blog/first"}
                 element={<MyFirstPost />}
                 caseSensitive={false}
                 />

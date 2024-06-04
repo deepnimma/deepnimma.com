@@ -27,7 +27,7 @@ const MyPlaceholder: React.FC = () => {
     )
 }
 
-const MyInvestigates: React.FC = () => {
+const MyBlog: React.FC = () => {
     return (
         <div>
             <MainPageHeader />
@@ -51,8 +51,8 @@ export const HeaderRoutes: React.FC = () => {
                 caseSensitive={false}
                 />
             <Route
-                path={"/investigates"}
-                element={<MyInvestigates />}
+                path={"/blog"}
+                element={<MyBlog />}
                 caseSensitive={false}
                 />
         </Routes>

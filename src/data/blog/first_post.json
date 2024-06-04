@@ -18,5 +18,6 @@
     4,
     5
   ],
+  "endpoint": "/blog/first",
   "references": []
 }
