@@ -35,17 +35,27 @@ def _create_paragraph(paragraph: str) -> str:
     )
 
 
-def _create_picture(folder_name: str, pic: str) -> str:
+def _create_picture(folder_name: str, pic: str, subfolder: str | None) -> str:
     print(f'Creating picture -> {folder_name}/{pic}')
 
-    return (
-            r'<Box>' + "\n" +
-            r'<img' + "\n" +
-            r'src={require("../../data/blog/pictures/' + folder_name + r'/' + pic + r'")}' + "\n" +
-            r'loading={"lazy"}' + "\n" +
-            r'/>' + "\n" +
-            r'</Box>' + "\n"
-    )
+    if subfolder is None:
+        return (
+                r'<Box>' + "\n" +
+                r'<img' + "\n" +
+                r'src={require("../../data/blog/pictures/' + folder_name + r'/' + pic + r'")}' + "\n" +
+                r'loading={"lazy"}' + "\n" +
+                r'/>' + "\n" +
+                r'</Box>' + "\n"
+        )
+    else:
+        return (
+                r'<Box>' + "\n" +
+                r'<img' + "\n" +
+                r'src={require("../../../data/blog/pictures/' + folder_name + r'/' + pic + r'")}' + "\n" +
+                r'loading={"lazy"}' + "\n" +
+                r'/>' + "\n" +
+                r'</Box>' + "\n"
+        )
 
 
 def _create_reference(reference: str) -> str:
@@ -58,7 +68,7 @@ def _create_reference(reference: str) -> str:
     )
 
 
-def generate_body(post_name: str, data: list[dict[str, str]]) -> tuple[list[str], list[str]]:
+def generate_body(post_name: str, subfolder: str | None, data: list[dict[str, str]]) -> tuple[list[str], list[str]]:
     print(f'Generating Body -> {post_name}')
 
     body = list()
@@ -68,7 +78,7 @@ def generate_body(post_name: str, data: list[dict[str, str]]) -> tuple[list[str]
             break
 
         if "picture" in item:
-            body.append(_create_picture(post_name, item["picture"]))
+            body.append(_create_picture(post_name, item["picture"], subfolder))
         else:
             body.append(_create_paragraph(item["paragraph"]))
 
@@ -233,7 +243,7 @@ if __name__ == "__main__":
     org_data = organize_data(data)
 
     title_str: str = _create_title(org_data)
-    pp_list, reference_list = generate_body(jsonFilename, org_data)
+    pp_list, reference_list = generate_body(jsonFilename, subfolder, org_data)
     reference_str_list = _create_reference_body(reference_list)
 
     base: str = generate_full_page(class_name, title_str, pp_list, reference_str_list)
