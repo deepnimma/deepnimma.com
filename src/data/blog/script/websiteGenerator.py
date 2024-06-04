@@ -235,7 +235,7 @@ if __name__ == "__main__":
 
     # Only Change These Variables
     jsonFilename: str = "first_post"  # omit the .json
-    subfolder: str | None = None  # str | None
+    subfolder: str | None = "jun24"  # str | None
     class_name: str = "FirstPost"  # Name of the javascript class
 
     # Do not change anything below this

@@ -5,7 +5,7 @@ import {default as first_post} from "./../../data/blog/first_post.json"
 import BlogCardFactory from "../../util/blogFactory";
 import {Stack} from "@mui/material";
 
-const Investigates: React.FC = () => {
+const Blog: React.FC = () => {
     return (
         <Stack spacing={2} alignItems={"center"} padding={"20px"} sx={{ backgroundColor: "darkred" }}>
             <BlogCardFactory
@@ -22,6 +22,6 @@ const Investigates: React.FC = () => {
             />
         </Stack>
     ) // return
-} // Investigates
+} // Blog
 
-export default Investigates
+export default Blog

@@ -3,7 +3,7 @@ import {Footer} from "../elements/footer";
 import Camera from "../pages/camera";
 import {Header} from "../elements/header";
 import {Placeholder} from "../pages/placeholder";
-import Investigates from "../pages/investigates";
+import Blog from "../pages/blog";
 import {MainPageFooter} from "../home/mainPageFooter";
 import {Route, Routes} from "react-router-dom";
 
@@ -31,7 +31,7 @@ const MyInvestigates: React.FC = () => {
     return (
         <div>
             <MainPageHeader />
-            <Investigates />
+            <Blog />
             <MainPageFooter />
         </div>
     )
